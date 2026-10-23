@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galeri Prompt — Demo</title>
+<meta name="description" content="Galeri prompt game & app edukasi: lihat preview, salin prompt, tempel ke AI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FD5E2B'/%3E%3Cpath d='M10 9h12M10 16h12M10 23h7' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#"><span class="logo" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6h12M6 12h12M6 18h7"/></svg></span><b data-t="brand"></b><span class="demo-badge">DEMO</span></a>
+    <div class="top-r">
+      <div class="lang" role="group" aria-label="Bahasa / Language">
+        <button data-lg="id">ID</button><button data-lg="ms">MS</button><button data-lg="en">EN</button>
+      </div>
+      <a class="btn pro sm pro-link" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 4 10h12l4-10-6 4-4-8-4 8z"/></svg><span data-t="upgrade"></span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="eyebrow" data-t="eyebrow"></div>
+    <h1 data-t="h1"></h1>
+    <p class="lead" data-t="lead"></p>
+    <ol class="steps">
+      <li><span>1</span><div><b data-t="s1"></b><small data-t="s1d"></small></div></li>
+      <li><span>2</span><div><b data-t="s2"></b><small data-t="s2d"></small></div></li>
+      <li><span>3</span><div><b data-t="s3"></b><small data-t="s3d"></small></div></li>
+    </ol>
+  </section>
+
+  <section class="wrap">
+    <div class="bar">
+      <div class="tabs" id="tabs" role="group"></div>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="probox">
+      <div class="pro-l">
+        <div class="eyebrow light" data-t="proEyebrow"></div>
+        <h2 data-t="proH"></h2>
+        <p data-t="proP"></p>
+        <a class="btn pro lg pro-link" target="_blank" rel="noopener"><span data-t="upgradeLong"></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <table class="cmp">
+        <thead><tr><th></th><th>Demo</th><th>Pro</th></tr></thead>
+        <tbody id="cmp"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot"><span data-t="foot"></span></footer>
+
+<a class="float-pro pro-link" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 4 10h12l4-10-6 4-4-8-4 8z"/></svg><span data-t="upgrade"></span></a>
+
+<div class="modal" id="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="sheet-h">
+      <div><div class="eyebrow" id="mKat"></div><h3 id="mTitle"></h3></div>
+      <button class="x" id="mClose" aria-label="Tutup"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <textarea id="mText" readonly></textarea>
+    <div class="sheet-f">
+      <button class="btn" id="mCopy"></button>
+      <a class="btn line" id="mPrev" target="_blank" rel="noopener"></a>
+      <div class="ais"><span data-t="pasteTo"></span>
+        <a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a>
+        <a href="https://gemini.google.com/app" target="_blank" rel="noopener">Gemini</a>
+        <a href="https://claude.ai/new" target="_blank" rel="noopener">Claude</a>
+        <a href="https://chat.deepseek.com/" target="_blank" rel="noopener">DeepSeek</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
