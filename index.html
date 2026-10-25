@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/fitur.css">
 </head>
 <body>
 <header class="top">
@@ -44,8 +45,121 @@
     <div class="grid" id="grid"></div>
   </section>
 
+  <!-- ============ CARA PAKAI PROMPT GRATIS (animasi, js/demo.js) ============ -->
+  <section class="wrap cara" id="cara">
+    <div class="sec-h naik">
+      <div class="eyebrow" data-t="caraEyebrow"></div>
+      <h2 data-t="caraH"></h2>
+      <p data-t="caraP"></p>
+    </div>
+    <div class="cara-in">
+      <ol class="cara-langkah naik" id="caraLangkah">
+        <li data-s="1"><span>1</span><div><b data-t="c1"></b><small data-t="c1d"></small></div><i class="pb"></i></li>
+        <li data-s="2"><span>2</span><div><b data-t="c2"></b><small data-t="c2d"></small></div><i class="pb"></i></li>
+        <li data-s="3"><span>3</span><div><b data-t="c3"></b><small data-t="c3d"></small></div><i class="pb"></i></li>
+        <li data-s="4"><span>4</span><div><b data-t="c4"></b><small data-t="c4d"></small></div><i class="pb"></i></li>
+      </ol>
+
+      <div class="demo naik" id="demo" data-step="0" role="img">
+        <div class="demo-bar"><i></i><i></i><i></i><b id="demoBar"></b></div>
+        <div class="demo-isi">
+          <!-- 1: kartu galeri -->
+          <div class="layar l1">
+            <div class="dk"><div class="dk-img"><img id="dImg1" alt=""><span class="dk-pv" data-t="preview"></span></div><b id="dNama1"></b><span class="dk-btn" data-t="view"></span></div>
+            <div class="dk pilih"><div class="dk-img"><img id="dImg2" alt=""><span class="dk-pv" data-t="preview"></span></div><b id="dNama2"></b><span class="dk-btn salin-k" data-t="view"></span></div>
+          </div>
+          <!-- 2: jendela prompt -->
+          <div class="layar l2">
+            <p class="d-lbl" id="dNamaP"></p>
+            <pre id="dPrompt"></pre>
+            <div class="d-aksi"><span class="d-salin"><span data-t="copy"></span></span><span class="d-ai">ChatGPT</span><span class="d-ai">Gemini</span><span class="d-ai">Claude</span></div>
+          </div>
+          <!-- 3: AI -->
+          <div class="layar l3">
+            <div class="ai-top"><b>ChatGPT</b><span class="ai-dot"></span></div>
+            <div class="ai-pesan"><pre id="dTempel"></pre></div>
+            <div class="ai-ketik"><i></i><i></i><i></i></div>
+            <div class="ai-input"><span data-t="pasteHint"></span><b class="ai-kirim"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></b></div>
+          </div>
+          <!-- 4: hasil jadi -->
+          <div class="layar l4">
+            <div class="jadi-img"><img id="dImgJadi" alt=""><span class="jadi-play"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></div>
+            <p class="jadi-t"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-t="jadi"></span></p>
+          </div>
+          <span class="kursor" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.6L10 19z" fill="#1F1A14" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <span class="d-toast" data-t="copied"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FITUR PRO ============ -->
+  <section class="wrap pro-fitur" id="pro">
+    <div class="sec-h naik">
+      <div class="eyebrow" data-t="pfEyebrow"></div>
+      <h2 data-t="pfH"></h2>
+      <p data-t="pfP"></p>
+    </div>
+    <div class="pf-grid">
+      <article class="pf naik pf-besar">
+        <div class="pf-vis v-kipas">
+          <span style="--i:0"><img src="img/pro/finalboss.jpg" alt=""></span>
+          <span style="--i:1"><img src="img/pro/biolab.jpg" alt=""></span>
+          <span style="--i:2"><img src="img/pro/jawiku.jpg" alt=""></span>
+          <span style="--i:3"><img src="img/pro/lpindo.jpg" alt=""></span>
+          <b class="v-angka">100+</b>
+        </div>
+        <h3 data-t="pf1"></h3><p data-t="pf1d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-form">
+          <div class="vf"><small data-t="vfTopik"></small><b data-t="vfTopikV"></b></div>
+          <div class="vf"><small data-t="vfJenjang"></small><b data-t="vfJenjangV"></b></div>
+          <div class="vf"><small data-t="vfBahasa"></small><b data-t="vfBahasaV"></b></div>
+        </div>
+        <h3 data-t="pf2"></h3><p data-t="pf2d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis"><div class="v-mode"><span class="sl"></span><span class="m" data-t="vm1"></span><span class="m" data-t="vm2"></span></div></div>
+        <h3 data-t="pf3"></h3><p data-t="pf3d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-custom"><span class="vc-ide" data-t="vcIde"></span><span class="bk"></span><span class="bk"></span><span class="bk pendek"></span><svg class="vc-bintang" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></div>
+        <h3 data-t="pf4"></h3><p data-t="pf4d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-ai"><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>DeepSeek</span></div>
+        <h3 data-t="pf5"></h3><p data-t="pf5d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-lp"><div class="lp-win"><i class="lp-h"></i><i class="lp-a"></i><i class="lp-b"></i><span class="lp-k"><i></i><i></i><i></i></span></div></div>
+        <h3 data-t="pf6"></h3><p data-t="pf6d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-riwayat"><span></span><span></span><span></span></div>
+        <h3 data-t="pf7"></h3><p data-t="pf7d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-play" style="background-image:url(img/arena-clawd.jpg)"><span class="putar"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></div>
+        <h3 data-t="pf8"></h3><p data-t="pf8d"></p>
+      </article>
+
+      <article class="pf naik">
+        <div class="pf-vis v-panduan"><span class="lj"></span><span class="lj"></span><span class="lj"></span><span class="lj"></span></div>
+        <h3 data-t="pf9"></h3><p data-t="pf9d"></p>
+      </article>
+    </div>
+  </section>
+
   <section class="wrap">
-    <div class="probox">
+    <div class="probox naik">
       <div class="pro-l">
         <div class="eyebrow light" data-t="proEyebrow"></div>
         <h2 data-t="proH"></h2>
@@ -87,5 +201,6 @@
 
 <script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>

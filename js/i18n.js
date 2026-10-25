@@ -61,3 +61,71 @@ var UI = {
     foot: 'Prompt gallery demo. Game & app previews are hosted separately.', close: 'Close'
   }
 };
+
+/* Teks bagian "Cara pakai prompt gratis" (animasi) dan "Fitur Pro" */
+Object.assign(UI.id, {
+  caraEyebrow: 'Cara pakai prompt gratis', caraH: 'Dari prompt sampai game jadi, <em>4 langkah</em>',
+  caraP: 'Begini cara memakai prompt demo di atas. Tidak perlu bisa coding: cukup salin, tempel, lalu tunggu AI bekerja.',
+  c1: 'Pilih kartu & coba preview', c1d: 'Lihat dulu hasil jadinya, lalu tekan Lihat prompt.',
+  c2: 'Salin prompt', c2d: 'Prompt lengkap tersalin dengan satu klik.',
+  c3: 'Tempel ke AI, kirim', c3d: 'Buka ChatGPT, Gemini, Claude, atau DeepSeek, tempel, lalu kirim.',
+  c4: 'Game jadi, mainkan', c4d: 'Buka pratinjau (Canvas atau Artifact) dan bagikan ke murid.',
+  pasteHint: 'Tempel prompt di sini…', jadi: 'Game jadi, siap dimainkan murid', demoBar: 'Galeri Prompt · Demo',
+  pfEyebrow: 'Apa bila Pro', pfH: 'Fitur yang terbuka di <em>versi Pro</em>',
+  pfP: 'Demo hanya memberi 12 prompt. Di Pro, Anda mendapat seluruh koleksi plus alat untuk membuat prompt sesuai materi sendiri.',
+  pf1: '100+ prompt game, app & landing page', pf1d: 'Semua koleksi terbuka, masing-masing dengan preview hasil jadinya.',
+  pf2: 'Ubah topik, jenjang & bahasa', pf2d: 'Tekan Isi & ubah: prompt menyesuaikan materi kelas Anda sendiri.',
+  pf3: 'Dua mode mulai', pf3d: 'Sudah punya ide? Ketik saja. Belum? Dipandu 5 langkah sampai prompt jadi.',
+  pf4: 'Prompt custom dengan AI', pf4d: 'Ceritakan ide dengan bahasa sehari-hari, AI menyusunnya jadi prompt detail.',
+  pf5: 'Kirim ke AI, prompt ikut', pf5d: 'Satu klik membuka ChatGPT atau Claude dengan prompt sudah terisi.',
+  pf6: 'Template landing page', pf6d: 'Prompt untuk halaman jualan produk digital, kelas, atau jasa Anda.',
+  pf7: 'Riwayat prompt', pf7d: 'Setiap prompt yang disalin atau dikirim tersimpan, tinggal pakai ulang.',
+  pf8: 'Koleksi game Clawd siap main', pf8d: 'Arena Clawd, Lastik, Potong Tali, dan lainnya: mainkan dulu, lalu buat versi Anda.',
+  pf9: 'Panduan beranimasi', pf9d: 'Cara pakai, cara revisi, dan cara membuat prompt lebih detail, langkah demi langkah.',
+  vfTopik: 'Topik', vfTopikV: 'Pecahan', vfJenjang: 'Jenjang', vfJenjangV: 'SD kelas 4', vfBahasa: 'Bahasa', vfBahasaV: 'Indonesia',
+  vm1: 'Punya ide', vm2: 'Belum punya ide', vcIde: '“game balapan soal IPA kelas 5”'
+});
+Object.assign(UI.ms, {
+  caraEyebrow: 'Cara guna prompt percuma', caraH: 'Dari prompt hingga game siap, <em>4 langkah</em>',
+  caraP: 'Begini cara menggunakan prompt demo di atas. Tidak perlu tahu coding: salin, tampal, kemudian tunggu AI bekerja.',
+  c1: 'Pilih kad & cuba pratonton', c1d: 'Lihat hasil siapnya dahulu, kemudian tekan Lihat prompt.',
+  c2: 'Salin prompt', c2d: 'Prompt lengkap disalin dengan satu klik.',
+  c3: 'Tampal ke AI, hantar', c3d: 'Buka ChatGPT, Gemini, Claude atau DeepSeek, tampal, kemudian hantar.',
+  c4: 'Game siap, mainkan', c4d: 'Buka pratonton (Canvas atau Artifact) dan kongsi dengan murid.',
+  pasteHint: 'Tampal prompt di sini…', jadi: 'Game siap, sedia dimainkan murid', demoBar: 'Galeri Prompt · Demo',
+  pfEyebrow: 'Jika Pro', pfH: 'Ciri yang dibuka dalam <em>versi Pro</em>',
+  pfP: 'Demo hanya memberi 12 prompt. Dalam Pro, anda mendapat seluruh koleksi serta alat untuk membina prompt ikut bahan pengajaran sendiri.',
+  pf1: '100+ prompt game, app & landing page', pf1d: 'Semua koleksi dibuka, setiap satu dengan pratonton hasil siapnya.',
+  pf2: 'Tukar topik, tahap & bahasa', pf2d: 'Tekan Isi & ubah: prompt menyesuaikan bahan kelas anda sendiri.',
+  pf3: 'Dua mod mula', pf3d: 'Sudah ada idea? Taip sahaja. Belum? Dipandu 5 langkah hingga prompt siap.',
+  pf4: 'Prompt custom dengan AI', pf4d: 'Ceritakan idea dalam bahasa harian, AI menyusunnya menjadi prompt terperinci.',
+  pf5: 'Hantar ke AI, prompt ikut', pf5d: 'Satu klik membuka ChatGPT atau Claude dengan prompt sudah terisi.',
+  pf6: 'Templat landing page', pf6d: 'Prompt untuk halaman jualan produk digital, kelas atau perkhidmatan anda.',
+  pf7: 'Sejarah prompt', pf7d: 'Setiap prompt yang disalin atau dihantar disimpan, sedia diguna semula.',
+  pf8: 'Koleksi game Clawd sedia main', pf8d: 'Arena Clawd, Lastik, Potong Tali dan lain-lain: main dahulu, kemudian bina versi anda.',
+  pf9: 'Panduan beranimasi', pf9d: 'Cara guna, cara semak semula dan cara menjadikan prompt lebih terperinci, langkah demi langkah.',
+  vfTopik: 'Topik', vfTopikV: 'Pecahan', vfJenjang: 'Tahap', vfJenjangV: 'Tahun 4', vfBahasa: 'Bahasa', vfBahasaV: 'Melayu',
+  vm1: 'Ada idea', vm2: 'Belum ada idea', vcIde: '“game lumba soalan Sains Tahun 5”'
+});
+Object.assign(UI.en, {
+  caraEyebrow: 'How to use the free prompts', caraH: 'From prompt to finished game in <em>4 steps</em>',
+  caraP: 'Here is how to use the demo prompts above. No coding needed: copy, paste, and let the AI do the work.',
+  c1: 'Pick a card & try the preview', c1d: 'See the finished result first, then tap View prompt.',
+  c2: 'Copy the prompt', c2d: 'One click copies the full prompt.',
+  c3: 'Paste into AI, send', c3d: 'Open ChatGPT, Gemini, Claude or DeepSeek, paste and send.',
+  c4: 'Game ready, play it', c4d: 'Open the preview (Canvas or Artifact) and share it with students.',
+  pasteHint: 'Paste the prompt here…', jadi: 'Game ready for your students', demoBar: 'Prompt Gallery · Demo',
+  pfEyebrow: 'With Pro', pfH: 'What you unlock in <em>Pro</em>',
+  pfP: 'The demo gives you 12 prompts. Pro gives you the whole collection plus tools to build prompts around your own lessons.',
+  pf1: '100+ game, app & landing page prompts', pf1d: 'The full collection unlocked, each with a preview of the finished result.',
+  pf2: 'Change topic, level & language', pf2d: 'Tap Fill & edit: the prompt adapts to your own lesson.',
+  pf3: 'Two ways to start', pf3d: 'Have an idea? Just type it. No idea yet? A 5-step guide builds the prompt with you.',
+  pf4: 'Custom prompts with AI', pf4d: 'Describe your idea in plain words and AI turns it into a detailed prompt.',
+  pf5: 'Send to AI, prompt included', pf5d: 'One click opens ChatGPT or Claude with the prompt already filled in.',
+  pf6: 'Landing page templates', pf6d: 'Prompts for sales pages for your digital product, class or service.',
+  pf7: 'Prompt history', pf7d: 'Every prompt you copy or send is saved, ready to reuse.',
+  pf8: 'Clawd games, ready to play', pf8d: 'Arena Clawd, Slingshot, Cut the Rope and more: play first, then make your own.',
+  pf9: 'Animated guide', pf9d: 'How to use, revise and add detail to prompts, step by step.',
+  vfTopik: 'Topic', vfTopikV: 'Fractions', vfJenjang: 'Level', vfJenjangV: 'Grade 4', vfBahasa: 'Language', vfBahasaV: 'English',
+  vm1: 'Have an idea', vm2: 'No idea yet', vcIde: '“racing game, grade 5 science”'
+});
