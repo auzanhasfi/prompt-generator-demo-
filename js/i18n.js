@@ -196,3 +196,53 @@ Object.assign(UI.en, {
   pf1: 'Full Prompt Gallery: 100+ prompts',
   foot: 'Prompt Gallery demo. Game & app previews are hosted separately.'
 });
+
+/* 28 Okt 21:05: liputan WTM (What's The Meta) tentang Arena Clawd + prompt-nya */
+Object.assign(UI.id, {
+  wEyebrow: 'Diliput What\'s The Meta (WTM)',
+  wH: 'Game buatan saya diliput <em>media gaming terbesar Malaysia.</em> Prompt-nya saya bagikan di sini.',
+  wLead: 'Pada 26 Oktober 2026, <b>WTM (What\'s The Meta)</b> mengangkat <b>Arena Clawd</b>, game ala Mobile Legends yang saya buat untuk murid, dengan kuis matematika di tengah pertarungan. Game itu saya buat dari satu prompt, dan prompt yang sama ada di bawah ini, gratis.',
+  wTonton: 'Tonton liputannya di Instagram',
+  wKutip: '“Seorang cikgu … menghasilkan Arena Clawd, game ala MOBA seperti Mobile Legends.”',
+  wTgl: '@wtmtoday · 26 Okt 2026',
+  wQ1: 'Siapa WTM', wA1: 'What\'s The Meta, media e-sport dan gaming terbesar di Malaysia, aktif di Instagram, TikTok, dan Facebook.',
+  wQ2: 'Yang diliput', wA2: 'Arena Clawd: pilih hero, dorong minion lewat lorong, runtuhkan menara lawan. Setiap beberapa saat muncul soal matematika; jawaban benar memberi kekuatan, jawaban salah dijelaskan singkat.',
+  wQ3: 'Kenapa menarik', wA3: 'Game ini dibuat oleh guru, bukan studio game, tanpa menulis kode: cukup menempelkan prompt ke AI. Murid belajar sambil main game yang mereka kenal.',
+  wQ4: 'Bisa kamu tiru?', wA4: 'Bisa. Salin prompt di bawah, tempel ke Claude, ChatGPT, Gemini, atau DeepSeek, lalu ganti topik soalnya sesuai pelajaranmu.',
+  wSukaIG: 'suka di Instagram', wSukaTT: 'suka di TikTok', wPlatform: 'platform: IG, TikTok, FB',
+  wAlt: 'Liputan WTM tentang Arena Clawd: guru membuat game ala Mobile Legends dengan kuis matematika',
+  wpEyebrow: 'Prompt yang diliput', wpH: 'Prompt lengkap Arena Clawd', wpP: 'Prompt yang sama yang saya pakai untuk membuat game di liputan WTM.',
+  wpFull: 'Lihat prompt lengkap', wpMain: 'Main dulu'
+});
+Object.assign(UI.ms, {
+  wEyebrow: 'Diliput What\'s The Meta (WTM)',
+  wH: 'Game yang saya bina diliput <em>media gaming terbesar Malaysia.</em> Prompt-nya saya kongsikan di sini.',
+  wLead: 'Pada 26 Oktober 2026, <b>WTM (What\'s The Meta)</b> mengangkat <b>Arena Clawd</b>, game macam Mobile Legends yang saya bina untuk murid, dengan kuiz matematik di tengah pertarungan. Game itu saya bina daripada satu prompt, dan prompt yang sama ada di bawah, percuma.',
+  wTonton: 'Tonton liputannya di Instagram',
+  wKutip: '“Seorang cikgu … menghasilkan Arena Clawd, game ala MOBA seperti Mobile Legends.”',
+  wTgl: '@wtmtoday · 26 Okt 2026',
+  wQ1: 'Siapa WTM', wA1: 'What\'s The Meta, media e-sukan dan gaming terbesar di Malaysia, aktif di Instagram, TikTok dan Facebook.',
+  wQ2: 'Apa yang diliput', wA2: 'Arena Clawd: pilih hero, tolak minion ikut lorong, runtuhkan menara lawan. Setiap beberapa saat muncul soalan matematik; jawapan betul beri kuasa, jawapan salah diterangkan ringkas.',
+  wQ3: 'Kenapa menarik', wA3: 'Game ini dibina oleh cikgu, bukan studio game, tanpa menulis kod: cuma tampal prompt ke AI. Murid belajar sambil main game yang mereka kenal.',
+  wQ4: 'Boleh anda tiru?', wA4: 'Boleh. Salin prompt di bawah, tampal ke Claude, ChatGPT, Gemini atau DeepSeek, kemudian tukar topik soalan ikut subjek anda.',
+  wSukaIG: 'suka di Instagram', wSukaTT: 'suka di TikTok', wPlatform: 'platform: IG, TikTok, FB',
+  wAlt: 'Liputan WTM tentang Arena Clawd: cikgu bina game macam Mobile Legends dengan kuiz matematik',
+  wpEyebrow: 'Prompt yang diliput', wpH: 'Prompt penuh Arena Clawd', wpP: 'Prompt yang sama yang saya guna untuk bina game dalam liputan WTM.',
+  wpFull: 'Lihat prompt penuh', wpMain: 'Main dahulu'
+});
+Object.assign(UI.en, {
+  wEyebrow: 'Featured by What\'s The Meta (WTM)',
+  wH: 'A game I made was featured by <em>Malaysia\'s biggest gaming media.</em> Here is the prompt.',
+  wLead: 'On 26 October 2026, <b>WTM (What\'s The Meta)</b> featured <b>Arena Clawd</b>, a Mobile Legends-style game I built for students, with maths questions in the middle of the battle. I made it from a single prompt, and that same prompt is below, free.',
+  wTonton: 'Watch the feature on Instagram',
+  wKutip: '“A teacher … created Arena Clawd, a MOBA-style game like Mobile Legends.”',
+  wTgl: '@wtmtoday · 26 Oct 2026',
+  wQ1: 'Who is WTM', wA1: 'What\'s The Meta, Malaysia\'s biggest e-sports and gaming media, on Instagram, TikTok and Facebook.',
+  wQ2: 'What was featured', wA2: 'Arena Clawd: pick a hero, push minions down the lanes, bring down the enemy towers. Every so often a maths question appears; right answers give power-ups, wrong ones get a short explanation.',
+  wQ3: 'Why it stood out', wA3: 'It was made by a teacher, not a game studio, without writing code: just pasting a prompt into AI. Students learn while playing a game they already know.',
+  wQ4: 'Can you make one?', wA4: 'Yes. Copy the prompt below, paste it into Claude, ChatGPT, Gemini or DeepSeek, then change the question topic to fit your lesson.',
+  wSukaIG: 'likes on Instagram', wSukaTT: 'likes on TikTok', wPlatform: 'platforms: IG, TikTok, FB',
+  wAlt: 'WTM feature on Arena Clawd: a teacher built a Mobile Legends-style game with maths quizzes',
+  wpEyebrow: 'The featured prompt', wpH: 'Full Arena Clawd prompt', wpP: 'The same prompt I used to make the game in the WTM feature.',
+  wpFull: 'View full prompt', wpMain: 'Play first'
+});

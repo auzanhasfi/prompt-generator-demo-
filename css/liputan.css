@@ -1,0 +1,41 @@
+/* Liputan WTM + prompt Arena Clawd */
+.wtm{padding:40px 16px 8px}
+.wtm-kepala{max-width:820px}
+.wtm h2{font-size:clamp(28px,4.4vw,44px);line-height:1.08;letter-spacing:-.02em;margin:10px 0 12px}
+.wtm h2 em{font-style:normal;color:var(--acc)}
+.wtm-lead{color:var(--mut);font-size:17px;margin:0;max-width:720px}
+.wtm-lead b{color:var(--ink)}
+.wtm-grid{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:28px;margin-top:28px;align-items:start}
+.wtm-hp{position:relative;display:block;border-radius:22px;overflow:hidden;border:6px solid var(--dark);box-shadow:var(--sh);background:var(--dark)}
+.wtm-hp img{display:block;width:100%;height:auto}
+.wtm-cap{position:absolute;left:10px;right:10px;bottom:10px;display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:12px;background:rgba(15,13,10,.82);color:#fff;font-size:13px}
+.wtm-cap img{width:28px;height:28px;border-radius:50%}
+.wtm-kutip{margin:0;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:14px;padding:18px 20px}
+.wtm-kutip p{margin:0 0 14px;font-size:19px;line-height:1.45;font-weight:500}
+.wtm-kutip footer{display:flex;align-items:center;gap:10px}
+.wtm-kutip footer img{width:36px;height:36px;border-radius:50%}
+.wtm-kutip footer b{display:block;font-size:14px}
+.wtm-kutip footer small{color:var(--mut);font-size:13px}
+.wtm-rinci{margin:18px 0 0;display:grid;gap:0;border-top:1px solid var(--line)}
+.wtm-rinci div{display:grid;grid-template-columns:170px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.wtm-rinci dt{font:700 12px/1.5 "Space Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.wtm-rinci dd{margin:0;font-size:15px;line-height:1.5}
+.wtm-angka{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.wtm-angka div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.wtm-angka b{display:block;font-size:24px;letter-spacing:-.02em}
+.wtm-angka span{color:var(--mut);font-size:13px}
+.wtm-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.wtm-link a{font-weight:700;font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--card)}
+.wtm-link a:hover{border-color:var(--ink)}
+.wtm-prompt{margin-top:28px;background:var(--dark);color:var(--dark-ink);border-radius:20px;padding:22px}
+.wp-kepala{display:flex;gap:16px;align-items:center}
+.wp-kepala img{width:160px;height:100px;object-fit:cover;border-radius:12px;flex:none}
+.wp-kepala h3{margin:6px 0 4px;font-size:22px;letter-spacing:-.01em}
+.wp-kepala p{margin:0;opacity:.75;font-size:14px}
+.wp-teks{position:relative;margin-top:16px}
+.wp-teks pre{margin:0;max-height:260px;overflow:hidden;white-space:pre-wrap;word-break:break-word;font:12.5px/1.6 "Space Mono",monospace;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}
+.wp-len{position:absolute;right:12px;bottom:10px;font:12px "Space Mono",monospace;opacity:.7}
+.wp-aksi{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.wtm-prompt .btn.line{border-color:var(--dark-ink);color:var(--dark-ink)}
+.wtm-prompt .btn.line:hover{background:rgba(255,255,255,.08)}
+@media (max-width:760px){.wtm-grid{grid-template-columns:1fr}.wtm-hp{max-width:300px;margin:0 auto}.wtm-rinci div{grid-template-columns:1fr;gap:4px}.wp-kepala img{width:96px;height:64px}.wp-aksi .btn{flex:1 1 100%}}

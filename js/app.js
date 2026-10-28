@@ -60,6 +60,7 @@ function render(){
   var list = all.filter(function(i){ return S.kat === 'semua' || (S.kat === 'game' ? isGame(i) : !isGame(i)); });
   $('count').textContent = t('shown', { n: all.length });
   $('grid').innerHTML = list.map(card).join('') + lockCard();
+  if (window.isiLiputan) isiLiputan();
 }
 
 function card(i){
