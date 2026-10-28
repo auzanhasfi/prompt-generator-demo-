@@ -1,0 +1,7 @@
+# Satu halaman, tiga bahasa: /id, /ms, /en
+/id    /index.html  200
+/ms    /index.html  200
+/en    /index.html  200
+/id/*  /:splat      200
+/ms/*  /:splat      200
+/en/*  /:splat      200

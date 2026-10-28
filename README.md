@@ -2,7 +2,7 @@
 
 Galeri Prompt versi DEMO (tanpa generator): 12 prompt game & app edukasi pilihan (±1/5 dari contoh yang punya preview),
 3 bahasa (Indonesia, Melayu, English). Tiap kartu: preview (preview.edugamelabs.com) + salin prompt + lihat prompt.
-Tombol "Upgrade ke Pro" → LP sesuai bahasa: ID → lpindo.edugamelabs.com, MS & EN → lpmalay.edugamelabs.com (ubah di `js/i18n.js`, `PRO_LINK`).
+Tombol "Upgrade ke Pro" → LP sesuai bahasa: ID → lptoolsid.edugamelabs.com, MS & EN → lptoolsmy.edugamelabs.com. Bahasa ikut URL: /id, /ms, /en (lihat `_redirects`) (ubah di `js/i18n.js`, `PRO_LINK`).
 
 Statik tanpa build (publish = `.`), siap Netlify.
 

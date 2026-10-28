@@ -30,6 +30,10 @@ function setLang(lg){
   if (!UI[lg]) lg = 'id';
   S.lg = lg;
   try { localStorage.setItem('galeri_lg', lg); } catch (e) {}
+  // URL ikut bahasa: /id, /ms, /en (Netlify _redirects menyajikan index.html yang sama)
+  if (location.protocol !== 'file:' && location.pathname.replace(/\/+$/, '') !== '/' + lg) {
+    try { history.replaceState(null, '', '/' + lg + location.search + location.hash); } catch (e) {}
+  }
   document.documentElement.lang = lg;
   document.querySelectorAll('[data-lg]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lg === lg); });
   document.querySelectorAll('[data-t]').forEach(function(el){ el.innerHTML = t(el.dataset.t); });
@@ -129,8 +133,8 @@ document.addEventListener('click', function(e){
 document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !$('modal').hidden) closePrompt(); });
 
 (function(){
-  var lg = null;
-  try { lg = localStorage.getItem('galeri_lg'); } catch (e) {}
+  var m = location.pathname.match(/^\/(id|ms|en)(\/|$)/), lg = m ? m[1] : null;
+  if (!lg) try { lg = localStorage.getItem('galeri_lg'); } catch (e) {}
   if (!lg) {
     var nav = (navigator.languages || [navigator.language || 'id']).join(',').toLowerCase();
     lg = /(^|,)ms/.test(nav) ? 'ms' : /(^|,)id/.test(nav) ? 'id' : /(^|,)en/.test(nav) ? 'en' : 'id';

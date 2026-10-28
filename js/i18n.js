@@ -1,8 +1,8 @@
 /* Teks UI 3 bahasa + link Pro per bahasa */
 var PRO_LINK = {
-  id: 'https://lpindo.edugamelabs.com',
-  ms: 'https://lpmalay.edugamelabs.com',
-  en: 'https://lpmalay.edugamelabs.com'
+  id: 'https://lptoolsid.edugamelabs.com',
+  ms: 'https://lptoolsmy.edugamelabs.com',
+  en: 'https://lptoolsmy.edugamelabs.com'
 };
 
 var UI = {
@@ -128,4 +128,33 @@ Object.assign(UI.en, {
   pf9: 'Animated guide', pf9d: 'How to use, revise and add detail to prompts, step by step.',
   vfTopik: 'Topic', vfTopikV: 'Fractions', vfJenjang: 'Level', vfJenjangV: 'Grade 4', vfBahasa: 'Language', vfBahasaV: 'English',
   vm1: 'Have an idea', vm2: 'No idea yet', vcIde: '“racing game, grade 5 science”'
+});
+
+/* Hook 28 Okt: "cara tercepat = prompt", gratis, ringkas Pro di atas */
+Object.assign(UI.id, {
+  eyebrow: 'Demo gratis dari EduGame Labs',
+  h1: 'Cara tercepat membuat apps dan game? <em>Pakai prompt.</em>',
+  lead: 'Ini saya berikan <b>gratis</b> untuk kalian semua.',
+  arah: 'Lihat hasilnya dulu di bawah, lalu salin prompt-nya.',
+  hpH: 'Mau lebih detail?', hpP: 'Versi Pro dapat semuanya:',
+  hp1: 'Prompt Generator', hp2: '100+ pilihan prompt', hp3: 'Ubah topik, jenjang &amp; bahasa', hp4: 'Kirim langsung ke AI',
+  hpBtn: 'Lihat versi Pro', hpLihat: 'Bandingkan fitur'
+});
+Object.assign(UI.ms, {
+  eyebrow: 'Demo percuma daripada EduGame Labs',
+  h1: 'Cara paling pantas bina apps dan game? <em>Guna prompt.</em>',
+  lead: 'Saya berikan <b>percuma</b> untuk anda semua.',
+  arah: 'Lihat hasilnya dahulu di bawah, kemudian salin prompt-nya.',
+  hpH: 'Mahu lebih terperinci?', hpP: 'Versi Pro dapat semuanya:',
+  hp1: 'Prompt Generator', hp2: '100+ pilihan prompt', hp3: 'Tukar topik, tahap &amp; bahasa', hp4: 'Hantar terus ke AI',
+  hpBtn: 'Lihat versi Pro', hpLihat: 'Banding ciri'
+});
+Object.assign(UI.en, {
+  eyebrow: 'Free demo from EduGame Labs',
+  h1: 'The fastest way to build apps and games? <em>Prompts.</em>',
+  lead: 'I\'m giving these away <b>free</b> for all of you.',
+  arah: 'See the result below first, then copy the prompt.',
+  hpH: 'Want more detail?', hpP: 'Pro gets you everything:',
+  hp1: 'Prompt Generator', hp2: '100+ prompt choices', hp3: 'Change topic, level &amp; language', hp4: 'Send straight to AI',
+  hpBtn: 'See Pro', hpLihat: 'Compare features'
 });
