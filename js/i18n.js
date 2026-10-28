@@ -158,3 +158,41 @@ Object.assign(UI.en, {
   hp1: 'Prompt Generator', hp2: '100+ prompt choices', hp3: 'Change topic, level &amp; language', hp4: 'Send straight to AI',
   hpBtn: 'See Pro', hpLihat: 'Compare features'
 });
+
+/* 28 Okt 20:35: demo = Galeri Prompt; Pro = Galeri Prompt lengkap + Prompt Generator */
+Object.assign(UI.id, {
+  brand: 'Galeri Prompt',
+  eyebrow: 'Galeri Prompt · demo gratis',
+  hpH: 'Ini baru sebagian Galeri Prompt.', hpP: 'Versi Pro dapat keduanya:',
+  hp1: 'Galeri Prompt lengkap (100+)', hp2: 'Prompt Generator untuk idemu', hp3: 'Ubah topik, jenjang &amp; bahasa', hp4: 'Kirim langsung ke AI',
+  lockH: 'prompt lainnya ada di Galeri Prompt versi Pro', lockP: 'Game, app, dan landing page, plus Prompt Generator yang menyusun prompt dari idemu sendiri.',
+  proH: 'Galeri Prompt lengkap + Prompt Generator',
+  proP: 'Demo ini hanya sebagian kecil Galeri Prompt. Di Pro kamu membuka semua 100+ prompt dan memakai Prompt Generator untuk ide di luar galeri.',
+  pfP: 'Demo memberimu 12 prompt dari Galeri Prompt. Pro membuka seluruh galeri plus Prompt Generator untuk materimu sendiri.',
+  pf1: 'Galeri Prompt lengkap: 100+ prompt',
+  foot: 'Demo Galeri Prompt. Preview game & app di-host terpisah.'
+});
+Object.assign(UI.ms, {
+  brand: 'Galeri Prompt',
+  eyebrow: 'Galeri Prompt · demo percuma',
+  hpH: 'Ini baru sebahagian Galeri Prompt.', hpP: 'Versi Pro dapat kedua-duanya:',
+  hp1: 'Galeri Prompt penuh (100+)', hp2: 'Prompt Generator untuk idea anda', hp3: 'Tukar topik, tahap &amp; bahasa', hp4: 'Hantar terus ke AI',
+  lockH: 'prompt lain ada dalam Galeri Prompt versi Pro', lockP: 'Game, app dan landing page, serta Prompt Generator yang menyusun prompt daripada idea anda sendiri.',
+  proH: 'Galeri Prompt penuh + Prompt Generator',
+  proP: 'Demo ini hanya sebahagian kecil Galeri Prompt. Dalam Pro anda membuka semua 100+ prompt dan guna Prompt Generator untuk idea di luar galeri.',
+  pfP: 'Demo memberi anda 12 prompt daripada Galeri Prompt. Pro membuka seluruh galeri serta Prompt Generator untuk bahan anda sendiri.',
+  pf1: 'Galeri Prompt penuh: 100+ prompt',
+  foot: 'Demo Galeri Prompt. Pratonton game & app dihoskan berasingan.'
+});
+Object.assign(UI.en, {
+  brand: 'Prompt Gallery',
+  eyebrow: 'Prompt Gallery · free demo',
+  hpH: 'This is only part of the Prompt Gallery.', hpP: 'Pro gets you both:',
+  hp1: 'The full Prompt Gallery (100+)', hp2: 'Prompt Generator for your ideas', hp3: 'Change topic, level &amp; language', hp4: 'Send straight to AI',
+  lockH: 'more prompts in the Pro Prompt Gallery', lockP: 'Games, apps and landing pages, plus the Prompt Generator that builds prompts from your own ideas.',
+  proH: 'Full Prompt Gallery + Prompt Generator',
+  proP: 'This demo is a small slice of the Prompt Gallery. Pro unlocks all 100+ prompts and the Prompt Generator for ideas beyond the gallery.',
+  pfP: 'The demo gives you 12 prompts from the Prompt Gallery. Pro unlocks the whole gallery plus the Prompt Generator for your own lessons.',
+  pf1: 'Full Prompt Gallery: 100+ prompts',
+  foot: 'Prompt Gallery demo. Game & app previews are hosted separately.'
+});
