@@ -246,3 +246,26 @@ Object.assign(UI.en, {
   wpEyebrow: 'The featured prompt', wpH: 'Full Arena Clawd prompt', wpP: 'The same prompt I used to make the game in the WTM feature.',
   wpFull: 'View full prompt', wpMain: 'Play first'
 });
+
+/* 31 Okt: meja laptop + HP interaktif di hero (js/meja.js) */
+Object.assign(UI.id, {
+  mjGaleri: 'Galeri Prompt', mjPilih: 'Pilih, lalu salin prompt-nya', mjSalin: 'Salin prompt', mjOk: 'Tersalin!',
+  mjPh: 'Tempel prompt di sini…', mjKosong: 'App kamu akan muncul di sini', mjJadi: 'App jadi · klik untuk main',
+  mjKamu: 'Kamu', mjTujuan: 'TUJUAN BELAJAR', mjAturan: 'ATURAN MAIN', mjTampilan: 'TAMPILAN', mjSiap: 'app siap dimainkan ✓',
+  mj1: 'Salin prompt', mj2: 'Tempel ke AI', mj3: 'TENG! App jadi', mjTempel: 'Tempel ke',
+  mjHint: 'Coba klik game di layar laptop, pilih AI-nya, atau klik HP untuk memainkan hasilnya.'
+});
+Object.assign(UI.ms, {
+  mjGaleri: 'Galeri Prompt', mjPilih: 'Pilih, kemudian salin prompt-nya', mjSalin: 'Salin prompt', mjOk: 'Disalin!',
+  mjPh: 'Tampal prompt di sini…', mjKosong: 'App anda akan muncul di sini', mjJadi: 'App siap · klik untuk main',
+  mjKamu: 'Anda', mjTujuan: 'OBJEKTIF PEMBELAJARAN', mjAturan: 'PERATURAN PERMAINAN', mjTampilan: 'PAPARAN', mjSiap: 'app sedia dimainkan ✓',
+  mj1: 'Salin prompt', mj2: 'Tampal ke AI', mj3: 'TENG! App siap', mjTempel: 'Tampal ke',
+  mjHint: 'Cuba klik game di skrin laptop, pilih AI, atau klik telefon untuk main hasilnya.'
+});
+Object.assign(UI.en, {
+  mjGaleri: 'Prompt Gallery', mjPilih: 'Pick one, then copy its prompt', mjSalin: 'Copy prompt', mjOk: 'Copied!',
+  mjPh: 'Paste your prompt here…', mjKosong: 'Your app will appear here', mjJadi: 'App ready · tap to play',
+  mjKamu: 'You', mjTujuan: 'LEARNING GOAL', mjAturan: 'GAME RULES', mjTampilan: 'LOOK & FEEL', mjSiap: 'app ready to play ✓',
+  mj1: 'Copy prompt', mj2: 'Paste into AI', mj3: 'TENG! App ready', mjTempel: 'Paste into',
+  mjHint: 'Click a game on the laptop screen, pick an AI, or tap the phone to play the result.'
+});

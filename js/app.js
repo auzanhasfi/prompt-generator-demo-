@@ -61,6 +61,7 @@ function render(){
   $('count').textContent = t('shown', { n: all.length });
   $('grid').innerHTML = list.map(card).join('') + lockCard();
   if (window.isiLiputan) isiLiputan();
+  if (window.isiMeja) isiMeja();
 }
 
 function card(i){

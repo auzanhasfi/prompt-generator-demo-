@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/fitur.css">
 <link rel="stylesheet" href="css/liputan.css">
+<link rel="stylesheet" href="css/meja.css">
 </head>
 <body>
 <header class="top">
@@ -32,11 +33,47 @@
     <h1 data-t="h1"></h1>
     <p class="lead" data-t="lead"></p>
     <p class="hero-arah" data-t="arah"></p>
-    <ol class="steps">
-      <li><span>1</span><div><b data-t="s1"></b><small data-t="s1d"></small></div></li>
-      <li><span>2</span><div><b data-t="s2"></b><small data-t="s2d"></small></div></li>
-      <li><span>3</span><div><b data-t="s3"></b><small data-t="s3d"></small></div></li>
-    </ol>
+    <!-- meja kerja laptop + HP interaktif (js/meja.js, css/meja.css) -->
+    <div class="meja" id="meja">
+      <div class="lap">
+        <div class="lap-layar">
+          <div class="lap-bar"><i></i><i></i><i></i>
+            <span class="lap-tab on" id="tabGal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span data-t="mjGaleri"></span></span>
+            <span class="lap-tab" id="tabAi"><img id="lapAiLogo" src="img/ai/claude.svg" alt=""><span id="lapAiNama">Claude</span></span>
+          </div>
+          <div class="lap-isi">
+            <div class="lyr-gal" id="lyrGal">
+              <div class="gal-kepala"><b data-t="mjGaleri"></b><span data-t="mjPilih"></span></div>
+              <div class="gal-grid" id="galGrid"></div>
+            </div>
+            <div class="lyr-ai" id="lyrAi">
+              <div class="ai-chat" id="aiChat"></div>
+              <div class="ai-input" id="aiInput"><span id="aiPh"></span><button type="button" class="ai-kirim" id="aiKirim" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+            </div>
+            <div class="pintas" id="pintas"><b class="mod">Ctrl</b><b id="pintasK">C</b></div>
+          </div>
+        </div>
+        <div class="lap-alas"><i></i></div>
+      </div>
+      <a class="hpx" id="hpx" target="_blank" rel="noopener">
+        <span class="hpx-layar">
+          <span class="hpx-poni"></span>
+          <span class="hpx-kosong"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span data-t="mjKosong"></span></span>
+          <span class="hpx-app" id="hpxApp"></span>
+          <span class="hpx-teng" id="hpxTeng"><b>TENG!</b><span class="cetar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          <span class="hpx-toast" id="hpxToast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-t="mjJadi"></span></span>
+        </span>
+      </a>
+      <span class="m-bawa" id="mBawa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>prompt</span>
+      <div class="m-kursor" id="mKursor"><span class="riak"></span><svg viewBox="0 0 24 24"><path d="M4 2l16 9-7 2-3 7z" fill="#1F1A14" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+    </div>
+    <div class="meja-kontrol" id="mejaKontrol">
+      <button type="button" data-t0="0.4"><span>1</span><em data-t="mj1"></em><i></i></button>
+      <button type="button" data-t0="2.3"><span>2</span><em data-t="mj2"></em><i></i></button>
+      <button type="button" data-t0="5.9"><span>3</span><em data-t="mj3"></em><i></i></button>
+    </div>
+    <div class="meja-ai" id="mejaAi"><span data-t="mjTempel"></span></div>
+    <p class="meja-hint" data-t="mjHint"></p>
     <!-- ringkas Pro di hook: singkat, detail ada di #pro -->
     <div class="hero-pro">
       <div class="hp-teks"><b data-t="hpH"></b><span data-t="hpP"></span></div>
@@ -258,5 +295,6 @@
 <script src="js/app.js"></script>
 <script src="js/demo.js"></script>
 <script src="js/liputan.js"></script>
+<script src="js/meja.js"></script>
 </body>
 </html>
