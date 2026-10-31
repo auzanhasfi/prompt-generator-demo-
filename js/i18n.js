@@ -269,3 +269,26 @@ Object.assign(UI.en, {
   mj1: 'Copy prompt', mj2: 'Paste into AI', mj3: 'TENG! App ready', mjTempel: 'Paste into',
   mjHint: 'Click a game on the laptop screen, pick an AI, or tap the phone to play the result.'
 });
+
+/* 31 Okt: testimoni video keseruan kelas (js/testimoni.js) */
+Object.assign(UI.id, {
+  tsAlis: 'Testimoni · Suasana kelas', tsTonton: 'Putar video', tsH: 'Begini serunya kelas kalau <em>belajarnya pakai game.</em>',
+  tsP: 'Murid tidak lagi menunggu bel. Mereka berebut menjawab, bersorak saat benar, dan minta main lagi. Game seperti ini dibuat dari prompt, tanpa coding.',
+  ts1: 'Murid aktif, semua ingin ikut menjawab', ts2: 'Materinya tetap materi pelajaranmu, hanya dikemas jadi game', ts3: 'Pemula pun bisa: pilih prompt, salin, tempel ke AI',
+  tsCatat: '<b>Sangat membantu untuk pemula.</b> Dengan Prompt Generator (versi Pro) kamu tidak perlu tahu cara menulis prompt: cukup tulis idemu, prompt lengkapnya disusunkan.',
+  tsBtn: 'Dapatkan Prompt Generator'
+});
+Object.assign(UI.ms, {
+  tsAlis: 'Testimoni · Suasana kelas', tsTonton: 'Main video', tsH: 'Beginilah serunya kelas bila <em>belajar guna game.</em>',
+  tsP: 'Murid tak lagi tunggu loceng. Mereka berebut menjawab, bersorak bila betul, dan minta main lagi. Game macam ni dibina daripada prompt, tanpa coding.',
+  ts1: 'Murid aktif, semua nak turut menjawab', ts2: 'Isi pelajaran tetap isi anda, cuma dibungkus jadi game', ts3: 'Pemula pun boleh: pilih prompt, salin, tampal ke AI',
+  tsCatat: '<b>Sangat membantu untuk pemula.</b> Dengan Prompt Generator (versi Pro) anda tak perlu tahu cara menulis prompt: tulis sahaja idea anda, prompt lengkap disusunkan.',
+  tsBtn: 'Dapatkan Prompt Generator'
+});
+Object.assign(UI.en, {
+  tsAlis: 'Testimonial · In the classroom', tsTonton: 'Play video', tsH: 'This is how fun class gets when <em>learning is a game.</em>',
+  tsP: 'Students stop waiting for the bell. They race to answer, cheer when they get it right, and ask to play again. Games like this are built from a prompt, with no coding.',
+  ts1: 'Every student wants to answer', ts2: 'Your lesson content stays the same, just wrapped as a game', ts3: 'Beginners can do it: pick a prompt, copy, paste into AI',
+  tsCatat: '<b>A big help for beginners.</b> With Prompt Generator (Pro) you don\'t need to know how to write prompts: just describe your idea and the full prompt is written for you.',
+  tsBtn: 'Get Prompt Generator'
+});
