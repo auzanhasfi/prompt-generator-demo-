@@ -16,3 +16,14 @@
 .testi-catat b{color:var(--acc)}
 .testi .btn{margin-top:22px}
 @media (max-width:760px){.testi{grid-template-columns:1fr}.testi-hp{width:min(100%,280px)}}
+
+/* Video di bawah judul utama; seksyen .testi di bawah tinggal teks */
+.hero-vid{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:center;margin:20px 0 28px}
+.hero-vid .testi-hp{width:100%;margin:0}
+.hero-vid-cap{margin:0 0 14px;font-weight:700;font-size:clamp(20px,2.4vw,28px);line-height:1.2;letter-spacing:-.01em}
+.testi{grid-template-columns:minmax(0,1fr)}
+@media (max-width:760px){
+  .hero-vid{grid-template-columns:minmax(0,1fr);margin:16px 0 22px}
+  .hero-vid .testi-hp{width:min(100%,250px);margin-inline:auto}
+  .hero-vid-cap{text-align:center}
+}

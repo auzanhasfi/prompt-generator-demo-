@@ -14,6 +14,13 @@
 <link rel="stylesheet" href="css/liputan.css">
 <link rel="stylesheet" href="css/meja.css">
 <link rel="stylesheet" href="css/testimoni.css">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xh6pboeonq");
+</script>
 </head>
 <body>
 <header class="top">
@@ -32,8 +39,20 @@
   <section class="hero wrap">
     <div class="eyebrow" data-t="eyebrow"></div>
     <h1 data-t="h1"></h1>
-    <p class="lead" data-t="lead"></p>
-    <p class="hero-arah" data-t="arah"></p>
+    <!-- video testimoni tepat di bawah judul utama (js/testimoni.js) -->
+    <div class="hero-vid">
+      <div class="testi-hp">
+      <button type="button" class="testi-layar" id="testiPutar" data-yt="ySk5FHJWbCA">
+        <img src="img/testimoni/keseruan-kelas.jpg" alt="" fetchpriority="high" width="720" height="1280">
+        <span class="testi-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor"/></svg><span data-t="tsTonton"></span></span>
+      </button>
+      </div>
+      <div class="hero-vid-teks">
+        <p class="hero-vid-cap" data-t="tsCap"></p>
+        <p class="lead" data-t="lead"></p>
+        <p class="hero-arah" data-t="arah"></p>
+      </div>
+    </div>
     <!-- meja kerja laptop + HP interaktif (js/meja.js, css/meja.css) -->
     <div class="meja" id="meja">
       <div class="lap">
@@ -83,52 +102,6 @@
     </div>
   </section>
 
-  <!-- ============ LIPUTAN WTM + prompt Arena Clawd (js/liputan.js) ============ -->
-  <section class="wrap wtm" id="wtm">
-    <div class="wtm-kepala">
-      <div class="eyebrow" data-t="wEyebrow"></div>
-      <h2 data-t="wH"></h2>
-      <p class="wtm-lead" data-t="wLead"></p>
-    </div>
-    <div class="wtm-grid">
-      <a class="wtm-hp" href="https://www.instagram.com/p/De89Ivniayu/" target="_blank" rel="noopener">
-        <img src="img/wtm/liputan-arena-clawd.jpg" alt="" width="540" height="720" loading="lazy" id="wtmImg">
-        <span class="wtm-cap"><img src="img/wtm/wtm-logo.jpg" alt="" width="28" height="28"><b data-t="wTonton"></b></span>
-      </a>
-      <div class="wtm-isi">
-        <blockquote class="wtm-kutip"><p data-t="wKutip"></p><footer><img src="img/wtm/wtm-logo.jpg" alt="What's The Meta" width="36" height="36"><span><b>What's The Meta</b><small data-t="wTgl"></small></span></footer></blockquote>
-        <dl class="wtm-rinci">
-          <div><dt data-t="wQ1"></dt><dd data-t="wA1"></dd></div>
-          <div><dt data-t="wQ2"></dt><dd data-t="wA2"></dd></div>
-          <div><dt data-t="wQ3"></dt><dd data-t="wA3"></dd></div>
-          <div><dt data-t="wQ4"></dt><dd data-t="wA4"></dd></div>
-        </dl>
-        <div class="wtm-angka">
-          <div><b>2.138</b><span data-t="wSukaIG"></span></div>
-          <div><b>776</b><span data-t="wSukaTT"></span></div>
-          <div><b>3</b><span data-t="wPlatform"></span></div>
-        </div>
-        <div class="wtm-link">
-          <a href="https://www.instagram.com/p/De89Ivniayu/" target="_blank" rel="noopener">Instagram ↗</a>
-          <a href="https://www.tiktok.com/@wtmtoday/video/7700904024517725461" target="_blank" rel="noopener">TikTok ↗</a>
-          <a href="https://www.facebook.com/share/r/1Fq4zi7jY8/" target="_blank" rel="noopener">Facebook ↗</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="wtm-prompt">
-      <div class="wp-kepala">
-        <img id="wpImg" alt="" width="160" height="100">
-        <div><div class="eyebrow" data-t="wpEyebrow"></div><h3 data-t="wpH"></h3><p data-t="wpP"></p></div>
-      </div>
-      <div class="wp-teks"><pre id="wpPre"></pre><span class="wp-len" id="wpLen"></span></div>
-      <div class="wp-aksi">
-        <button class="btn pro" data-copy="arena-clawd" id="wpCopy"></button>
-        <button class="btn line" data-view="arena-clawd" id="wpView"></button>
-        <a class="btn line" id="wpPrev" target="_blank" rel="noopener"></a>
-      </div>
-    </div>
-  </section>
 
   <section class="wrap">
     <div class="bar">
@@ -189,12 +162,6 @@
   <!-- ============ FITUR PRO ============ -->
   <!-- ============ TESTIMONI VIDEO: keseruan kelas (YouTube Shorts) ============ -->
   <section class="wrap testi" id="testimoni">
-    <div class="testi-hp">
-      <button type="button" class="testi-layar" id="testiPutar" data-yt="ySk5FHJWbCA">
-        <img src="img/testimoni/keseruan-kelas.jpg" alt="" loading="lazy" width="720" height="1280">
-        <span class="testi-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor"/></svg><span data-t="tsTonton"></span></span>
-      </button>
-    </div>
     <div class="testi-teks">
       <div class="eyebrow" data-t="tsAlis"></div>
       <h2 data-t="tsH"></h2>
@@ -281,6 +248,52 @@
         <thead><tr><th></th><th>Demo</th><th>Pro</th></tr></thead>
         <tbody id="cmp"></tbody>
       </table>
+    </div>
+  </section>
+  <!-- ============ LIPUTAN WTM + prompt Arena Clawd (js/liputan.js) ============ -->
+  <section class="wrap wtm" id="wtm">
+    <div class="wtm-kepala">
+      <div class="eyebrow" data-t="wEyebrow"></div>
+      <h2 data-t="wH"></h2>
+      <p class="wtm-lead" data-t="wLead"></p>
+    </div>
+    <div class="wtm-grid">
+      <a class="wtm-hp" href="https://www.instagram.com/p/De89Ivniayu/" target="_blank" rel="noopener">
+        <img src="img/wtm/liputan-arena-clawd.jpg" alt="" width="540" height="720" loading="lazy" id="wtmImg">
+        <span class="wtm-cap"><img src="img/wtm/wtm-logo.jpg" alt="" width="28" height="28"><b data-t="wTonton"></b></span>
+      </a>
+      <div class="wtm-isi">
+        <blockquote class="wtm-kutip"><p data-t="wKutip"></p><footer><img src="img/wtm/wtm-logo.jpg" alt="What's The Meta" width="36" height="36"><span><b>What's The Meta</b><small data-t="wTgl"></small></span></footer></blockquote>
+        <dl class="wtm-rinci">
+          <div><dt data-t="wQ1"></dt><dd data-t="wA1"></dd></div>
+          <div><dt data-t="wQ2"></dt><dd data-t="wA2"></dd></div>
+          <div><dt data-t="wQ3"></dt><dd data-t="wA3"></dd></div>
+          <div><dt data-t="wQ4"></dt><dd data-t="wA4"></dd></div>
+        </dl>
+        <div class="wtm-angka">
+          <div><b>2.138</b><span data-t="wSukaIG"></span></div>
+          <div><b>776</b><span data-t="wSukaTT"></span></div>
+          <div><b>3</b><span data-t="wPlatform"></span></div>
+        </div>
+        <div class="wtm-link">
+          <a href="https://www.instagram.com/p/De89Ivniayu/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.tiktok.com/@wtmtoday/video/7700904024517725461" target="_blank" rel="noopener">TikTok ↗</a>
+          <a href="https://www.facebook.com/share/r/1Fq4zi7jY8/" target="_blank" rel="noopener">Facebook ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wtm-prompt">
+      <div class="wp-kepala">
+        <img id="wpImg" alt="" width="160" height="100">
+        <div><div class="eyebrow" data-t="wpEyebrow"></div><h3 data-t="wpH"></h3><p data-t="wpP"></p></div>
+      </div>
+      <div class="wp-teks"><pre id="wpPre"></pre><span class="wp-len" id="wpLen"></span></div>
+      <div class="wp-aksi">
+        <button class="btn pro" data-copy="arena-clawd" id="wpCopy"></button>
+        <button class="btn line" data-view="arena-clawd" id="wpView"></button>
+        <a class="btn line" id="wpPrev" target="_blank" rel="noopener"></a>
+      </div>
     </div>
   </section>
 </main>

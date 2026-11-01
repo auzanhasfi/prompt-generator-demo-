@@ -292,3 +292,8 @@ Object.assign(UI.en, {
   tsCatat: '<b>A big help for beginners.</b> With Prompt Generator (Pro) you don\'t need to know how to write prompts: just describe your idea and the full prompt is written for you.',
   tsBtn: 'Get Prompt Generator'
 });
+
+/* video testimoni di bawah judul utama */
+Object.assign(UI.id, { tsCap: 'Lihat suasana kelasnya: serunya belajar pakai game.' });
+Object.assign(UI.ms, { tsCap: 'Tengok suasana kelasnya: seronoknya belajar guna game.' });
+Object.assign(UI.en, { tsCap: 'See the classroom: how fun learning with games can be.' });
