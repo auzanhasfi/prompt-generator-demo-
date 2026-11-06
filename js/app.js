@@ -62,6 +62,7 @@ function render(){
   $('grid').innerHTML = list.map(card).join('') + lockCard();
   if (window.isiLiputan) isiLiputan();
   if (window.isiMeja) isiMeja();
+  if (window.isiKit) isiKit();
 }
 
 function card(i){

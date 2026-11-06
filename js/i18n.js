@@ -297,3 +297,62 @@ Object.assign(UI.en, {
 Object.assign(UI.id, { tsCap: 'Lihat suasana kelasnya: serunya belajar pakai game.' });
 Object.assign(UI.ms, { tsCap: 'Tengok suasana kelasnya: seronoknya belajar guna game.' });
 Object.assign(UI.en, { tsCap: 'See the classroom: how fun learning with games can be.' });
+
+/* Marketing Kit + 2 prompt video percuma (6 Nov 2026) */
+Object.assign(UI.id, {
+  kEyebrow: 'Marketing Kit · untuk jualan', kH: 'Mau jualan? <em>Marketing Kit</em>-nya sudah siap',
+  kP: 'Di versi Pro ada kit lengkap untuk menjual: produknya, halaman jualannya, dan video promosinya. Semuanya di-custom lewat prompt.',
+  kA: 'App', kAd: 'App belajar siap jual. Ganti topik, jenjang, bahasa, dan nama, lalu jual sebagai produkmu sendiri.',
+  kG: 'Game', kGd: 'Template game edukasi yang bebas di-custom: bentuk game, soal, tokoh, sampai gaya seperti game populer.',
+  kL: 'Landing Page', kLd: 'Gaya halaman jualan siap pakai. Isi produk, harga, dan tombol WhatsApp/pembayaran.',
+  kV: 'Video promosi', kVd: 'Prompt video dari video-video yang sudah kami buat. Prompt bahasa Melayu, hasil video bisa Melayu, Indonesia, atau Inggris.',
+  kPro: 'Lengkap di Pro', kFree: '2 gratis di bawah',
+  kFlowH: 'Alur jualan 4 langkah',
+  kf1: 'Buat produk', kf1d: 'Pilih app atau game, custom sesuai materimu, tempel prompt ke AI.',
+  kf2: 'Buat halaman jualan', kf2d: 'Prompt landing page: produk, harga, tombol bayar.',
+  kf3: 'Buat video promosi', kf3d: 'Pilih gaya video, AI membuat video kode yang bisa direkam.',
+  kf4: 'Posting & ajak komen', kf4d: 'Unggah ke TikTok/Reels, minta komen kata kunci, kirim link jualan.',
+  kvH: 'Coba 2 prompt video gratis', kvP: 'Tekan ▶ untuk memutar pratinjau. Pratinjaunya berupa kode (kanvas + musik), bukan file video. Pilih bahasa hasil video, lalu salin prompt-nya.',
+  kvPlay: 'Putar', kvStop: 'Stop', kvCode: 'kode', kvBhs: 'Bahasa video:',
+  kv1n: 'Tipografi Kinetik (Hook)', kv1j: 'Hook jualan · potret 9:16', kv1d: 'Huruf raksasa jatuh, teks berulang berjalan di latar, kata diacak lalu terkunci, dan tangga langkah 1–4. Cocok untuk 3 detik pertama.',
+  kv2n: 'Promo App + Tutorial Langkah', kv2j: 'Demo produk · potret 9:16', kv2d: 'Layar app di dalam HP besar dengan ketukan jari, 5 langkah bernomor cara membuatnya, ditutup kolom komentar berisi kata kunci.',
+  kProH: 'Di Pro: 6 gaya video + bisa diisi & diubah', kProP: 'Isometrik, kartun reaksi, lukisan cat minyak, piktogram, dan lainnya. Isi produk, penonton, CTA, durasi, dan format; prompt menyesuaikan.'
+});
+Object.assign(UI.ms, {
+  kEyebrow: 'Marketing Kit · untuk jualan', kH: 'Nak menjual? <em>Marketing Kit</em>-nya sudah sedia',
+  kP: 'Dalam versi Pro ada kit lengkap untuk menjual: produknya, halaman jualannya, dan video promosinya. Semuanya diubah suai melalui prompt.',
+  kA: 'App', kAd: 'App pembelajaran sedia dijual. Tukar topik, tahap, bahasa dan nama, kemudian jual sebagai produk anda sendiri.',
+  kG: 'Game', kGd: 'Templat game pendidikan yang bebas diubah suai: bentuk game, soalan, watak, hingga gaya seperti game popular.',
+  kL: 'Landing Page', kLd: 'Gaya halaman jualan sedia guna. Isi produk, harga, dan butang WhatsApp/pembayaran.',
+  kV: 'Video promosi', kVd: 'Prompt video daripada video-video yang telah kami hasilkan. Prompt dalam Bahasa Melayu, hasil video boleh Melayu, Indonesia atau Inggeris.',
+  kPro: 'Lengkap dalam Pro', kFree: '2 percuma di bawah',
+  kFlowH: 'Aliran jualan 4 langkah',
+  kf1: 'Bina produk', kf1d: 'Pilih app atau game, ubah suai ikut bahan anda, tampal prompt ke AI.',
+  kf2: 'Bina halaman jualan', kf2d: 'Prompt landing page: produk, harga, butang bayar.',
+  kf3: 'Bina video promosi', kf3d: 'Pilih gaya video, AI membina video kod yang boleh dirakam.',
+  kf4: 'Hantar & ajak komen', kf4d: 'Muat naik ke TikTok/Reels, minta komen kata kunci, hantar link jualan.',
+  kvH: 'Cuba 2 prompt video percuma', kvP: 'Tekan ▶ untuk main pratonton. Pratonton ini berupa kod (kanvas + muzik), bukan fail video. Pilih bahasa hasil video, kemudian salin prompt-nya.',
+  kvPlay: 'Main', kvStop: 'Henti', kvCode: 'kod', kvBhs: 'Bahasa video:',
+  kv1n: 'Tipografi Kinetik (Hook)', kv1j: 'Hook jualan · potret 9:16', kv1d: 'Huruf gergasi jatuh, teks berulang bergerak di latar, perkataan diacak lalu terkunci, dan tangga langkah 1–4. Sesuai untuk 3 saat pertama.',
+  kv2n: 'Promo App + Tutorial Langkah', kv2j: 'Demo produk · potret 9:16', kv2d: 'Skrin app dalam telefon besar dengan ketukan jari, 5 langkah bernombor cara membinanya, ditutup ruang komen berisi kata kunci.',
+  kProH: 'Dalam Pro: 6 gaya video + boleh diisi & diubah', kProP: 'Isometrik, kartun reaksi, lukisan cat minyak, piktogram dan lain-lain. Isi produk, penonton, CTA, tempoh dan format; prompt menyesuaikan.'
+});
+Object.assign(UI.en, {
+  kEyebrow: 'Marketing Kit · for selling', kH: 'Want to sell? The <em>Marketing Kit</em> is ready',
+  kP: 'Pro includes a complete selling kit: the product, the sales page and the promo video. Everything is customised through prompts.',
+  kA: 'App', kAd: 'Ready-to-sell learning apps. Change the topic, level, language and name, then sell it as your own product.',
+  kG: 'Game', kGd: 'Fully customisable educational game templates: game type, questions, characters, even styles like popular games.',
+  kL: 'Landing Page', kLd: 'Ready-made sales page styles. Fill in the product, price and WhatsApp/payment button.',
+  kV: 'Promo video', kVd: 'Video prompts based on videos we have already made. Prompts are in Malay; the video can come out in Malay, Indonesian or English.',
+  kPro: 'Full set in Pro', kFree: '2 free below',
+  kFlowH: '4-step selling flow',
+  kf1: 'Build the product', kf1d: 'Pick an app or game, customise it to your material, paste the prompt into AI.',
+  kf2: 'Build the sales page', kf2d: 'Landing page prompt: product, price, pay button.',
+  kf3: 'Make the promo video', kf3d: 'Choose a video style; AI builds a code video you can record.',
+  kf4: 'Post & ask for comments', kf4d: 'Upload to TikTok/Reels, ask for a keyword comment, send the sales link.',
+  kvH: 'Try 2 free video prompts', kvP: 'Press ▶ to play the preview. Previews are code (canvas + music), not video files. Pick the output video language, then copy the prompt.',
+  kvPlay: 'Play', kvStop: 'Stop', kvCode: 'code', kvBhs: 'Video language:',
+  kv1n: 'Kinetic Typography (Hook)', kv1j: 'Sales hook · portrait 9:16', kv1d: 'Giant letters drop, repeating text scrolls behind, words scramble then lock, and a 1–4 step ladder. Great for the first 3 seconds.',
+  kv2n: 'App Promo + Step Tutorial', kv2j: 'Product demo · portrait 9:16', kv2d: 'App screens in a big phone with finger taps, 5 numbered steps on how to make it, ending with a comment box typing the keyword.',
+  kProH: 'In Pro: 6 video styles + fully customisable', kProP: 'Isometric, cartoon reaction, oil painting, pictogram and more. Fill in the product, audience, CTA, duration and format; the prompt adapts.'
+});

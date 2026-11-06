@@ -14,3 +14,9 @@ Statik tanpa build (publish = `.`), siap Netlify.
   `node _build/jana.js <folder prompt-generator> <folder game-preview>` — daftar contoh ada di `PILIH` dalam `_build/jana.js`.
 
 Lihat di localhost: `node _build/serve.mjs` lalu buka http://localhost:8930
+
+## Marketing Kit (6 Nov 2026)
+Seksyen #kit sebelum testimoni: 4 bagian kit jualan versi Pro (App, Game, Landing Page, Video) + alur 4 langkah + 2 prompt video percuma
+(tipografi-kinetik, promo-tutorial) dengan pratonton KOD di video/<id>.html (video/kit.js). Prompt sentiasa Bahasa Melayu;
+butang BM/ID/EN memilih bahasa HASIL video (js/kit-video-data.js dijana daripada js/video.js repo Pro). Fail: js/kit.js, css/kit.css,
+teks k*/kv* di akhir js/i18n.js, poster img/video/.

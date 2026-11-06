@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pratonton: Promo App + Tutorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="kit.js"></script>
+<script>
+/* Gaya 2: PROMO APP + TUTORIAL (skrin sebenar dalam telefon besar, ketukan, langkah bernombor, CTA komen). */
+(function(){
+var K=KIT, W=540, H=960, F='Nunito, system-ui, sans-serif', BL='#1E5FD6', OR='#FD5E2B', CR='#F6F0E6', INK='#1B1F2A', GR='#1FA463';
+/* telefon: x,y tengah; isi(c,w,h) dilukis dalam skrin */
+var PW=280, PH=560;
+function phone(c,x,y,s,isi){c.save();c.translate(x,y);c.scale(s,s);
+  c.fillStyle='rgba(0,0,0,.22)';K.rr(c,-PW/2+6,-PH/2+14,PW,PH,40);c.fill();
+  c.fillStyle='#11141B';K.rr(c,-PW/2-9,-PH/2-9,PW+18,PH+18,46);c.fill();
+  c.save();K.rr(c,-PW/2,-PH/2,PW,PH,36);c.clip();c.translate(-PW/2,-PH/2);c.fillStyle='#fff';c.fillRect(0,0,PW,PH);isi(c,PW,PH);c.restore();
+  c.fillStyle='#11141B';K.rr(c,-38,-PH/2+8,76,20,10);c.fill();c.restore();}
+function tap(c,x,y,k){if(k<=0||k>=1)return;c.save();c.strokeStyle='rgba(253,94,43,'+(1-k)+')';c.lineWidth=4;K.circle(c,x,y,12+k*34);c.stroke();c.fillStyle='rgba(253,94,43,'+(.5*(1-k))+')';K.circle(c,x,y,14);c.fill();c.restore();}
+function cursor(c,x,y){c.save();c.translate(x,y);c.fillStyle='#fff';c.strokeStyle=INK;c.lineWidth=2;c.beginPath();c.moveTo(0,0);c.lineTo(0,26);c.lineTo(7,20);c.lineTo(13,31);c.lineTo(18,28);c.lineTo(12,18);c.lineTo(21,17);c.closePath();c.fill();c.stroke();c.restore();}
+function txt(c,s,x,y,sz,w,col,al){K.font(c,w||'800',sz,F);c.fillStyle=col||INK;c.textAlign=al||'left';c.fillText(s,x,y);c.textAlign='left';}
+/* ---- skrin app contoh: KuizKu ---- */
+function sHome(c,w,h,t){c.fillStyle='#EEF4FF';c.fillRect(0,0,w,h);txt(c,'KuizKu',18,58,20,'900',BL);txt(c,'Hai, Aisyah!',18,82,12,'700','#5A6475');
+  [['Pecahan','#FFB547'],['Sains','#3BC48A'],['Jawi','#7C6CF2'],['English','#FF7A7A']].forEach(function(m,i){var x=18+(i%2)*126,y=104+Math.floor(i/2)*128;c.fillStyle=m[1];K.rr(c,x,y,118,118,18);c.fill();c.fillStyle='rgba(255,255,255,.35)';K.circle(c,x+88,y+30,20);c.fill();txt(c,m[0],x+12,y+100,14,'900','#fff');});
+  c.fillStyle='#fff';K.rr(c,18,370,w-36,76,16);c.fill();txt(c,'Cabaran hari ini',32,400,13,'900');c.fillStyle='#E4EAF5';K.rr(c,32,414,w-90,10,5);c.fill();c.fillStyle=BL;K.rr(c,32,414,(w-90)*.6,10,5);c.fill();}
+function sQuiz(c,w,h,t,ans){c.fillStyle=BL;c.fillRect(0,0,w,h);c.fillStyle='rgba(255,255,255,.08)';for(var i=0;i<10;i++){c.beginPath();c.moveTo(w/2,h*.32);c.arc(w/2,h*.32,400,i*.63+t*.2,i*.63+.3+t*.2);c.fill();}
+  txt(c,'Soalan 3 / 10',w/2,60,12,'800','rgba(255,255,255,.8)','center');c.fillStyle='#fff';K.rr(c,22,80,w-44,120,18);c.fill();txt(c,'1/2 + 1/4 = ?',w/2,150,28,'900',INK,'center');
+  var sec=Math.max(0,20-Math.floor(t*2));c.fillStyle='#FFD34D';K.rr(c,w/2-34,210,68,30,15);c.fill();txt(c,'00:'+('0'+sec).slice(-2),w/2,231,14,'900',INK,'center');
+  ['2/6','3/4','1/8','2/4'].forEach(function(a,i){var x=22+(i%2)*(w/2-16),y=262+Math.floor(i/2)*84,ok=ans&&i===1,bad=false;c.fillStyle=ok?GR:'#fff';K.rr(c,x,y,w/2-28,70,16);c.fill();txt(c,a,x+(w/2-28)/2,y+44,22,'900',ok?'#fff':INK,'center');});
+  if(ans){var k=K.back(K.cl(ans));c.save();c.translate(w/2,470);c.scale(k,k);c.fillStyle='#fff';K.rr(c,-90,-26,180,52,26);c.fill();txt(c,'Betul! +10',0,8,20,'900',GR,'center');c.restore();
+    for(var j=0;j<18;j++){var a=j*.35,d=ans*160;c.fillStyle=['#FFD34D','#FF7A7A','#3BC48A','#fff'][j%4];c.fillRect(w/2+Math.cos(a)*d,300+Math.sin(a)*d+ans*ans*60,7,7);}}}
+/* ---- skrin Prompt Generator (ringkas) ---- */
+function pgTop(c,w,t){c.fillStyle='#FBF6EC';c.fillRect(0,0,w,PH);c.fillStyle='#fff';c.fillRect(0,0,w,64);c.fillStyle=OR;K.circle(c,26,44,10);c.fill();txt(c,'Prompt Generator',44,49,13,'900');}
+function sPG(c,w,h,t,st,k){pgTop(c,w,t);
+  if(st===0){txt(c,'Penjana Prompt',18,110,20,'900');txt(c,'Game · App · Landing Page',18,132,12,'700','#7A6A55');
+    [['Game',38],['App',24],['Landing Page',6]].forEach(function(m,i){var y=160+i*70,on=i===1&&k>.5;c.fillStyle=on?'#FFE7DC':'#fff';K.rr(c,18,y,w-36,58,14);c.fill();if(on){c.strokeStyle=OR;c.lineWidth=2;K.rr(c,18,y,w-36,58,14);c.stroke();}txt(c,m[0],34,y+35,15,'900');txt(c,m[1]+'',w-40,y+35,13,'800','#9A8A75','right');});}
+  if(st===1){c.fillStyle='#fff';K.rr(c,18,84,w-36,40,20);c.fill();c.strokeStyle='#E5D9C6';c.lineWidth=1.5;K.rr(c,18,84,w-36,40,20);c.stroke();var q='kuiz'.slice(0,Math.floor(k*6));txt(c,q||'Cari app…',38,110,13,'800',q?INK:'#A99A85');
+    [['KuizKu','#1E5FD6'],['JawiKu','#7C6CF2'],['SainsKu','#3BC48A']].forEach(function(m,i){var y=140+i*112,vis=i===0||k<.6;if(!vis)return;c.fillStyle='#fff';K.rr(c,18,y,w-36,100,14);c.fill();c.fillStyle=m[1];K.rr(c,28,y+10,90,80,10);c.fill();txt(c,m[0],130,y+40,15,'900');txt(c,'App kuiz murid',130,y+60,11,'700','#7A6A55');c.fillStyle=OR;K.rr(c,130,y+70,60,20,10);c.fill();txt(c,'Isi & ubah',160,y+84,9,'900','#fff','center');});}
+  if(st===2){txt(c,'KuizKu · Isi & ubah',18,100,15,'900');[['Topik','Pecahan Tahun 4'],['Untuk siapa','Murid 10 tahun'],['Bahasa','Bahasa Melayu']].forEach(function(f,i){var y=120+i*74;txt(c,f[0],18,y+14,11,'800','#7A6A55');c.fillStyle='#fff';K.rr(c,18,y+22,w-36,40,10);c.fill();c.strokeStyle=i===0?OR:'#E5D9C6';c.lineWidth=1.5;K.rr(c,18,y+22,w-36,40,10);c.stroke();var s=i===0?f[1].slice(0,Math.floor(k*f[1].length*1.3)):f[1];txt(c,s,30,y+48,13,'800');});
+    c.fillStyle='#2A2118';K.rr(c,18,352,w-36,140,12);c.fill();for(var i=0;i<7;i++){c.fillStyle=['#FFB547','#8FD6A8','#E8DCCB'][i%3];c.fillRect(30,370+i*16,(w-80)*(.4+K.rnd(i)*.6),6);}}
+  if(st===3){txt(c,'Prompt siap salin',18,100,15,'900');c.fillStyle='#2A2118';K.rr(c,18,116,w-36,320,12);c.fill();for(var i=0;i<16;i++){c.fillStyle=i%5===0?'#FFB547':'#E8DCCB';c.fillRect(30,136+i*18,(w-80)*(.35+K.rnd(i+3)*.65),6);}
+    var ok=k>.45;c.fillStyle=ok?GR:OR;K.rr(c,18,452,w-36,50,25);c.fill();txt(c,ok?'Tersalin!':'Salin prompt',w/2,483,16,'900','#fff','center');}
+  if(st===4){c.fillStyle='#fff';c.fillRect(0,0,w,h);txt(c,'Sembang AI',w/2,52,14,'900',INK,'center');c.fillStyle='#F1F1F4';K.rr(c,60,80,w-78,150,16);c.fill();for(var i=0;i<6;i++){c.fillStyle='#9AA0AE';c.fillRect(74,100+i*20,(w-120)*(.4+K.rnd(i+9)*.6),6);}
+    if(k>.35){c.fillStyle='#F7F7F9';K.rr(c,18,250,w-60,120,16);c.fill();txt(c,'Siap! KuizKu kamu:',32,278,12,'900');c.fillStyle='#E9EEF7';K.rr(c,32,292,w-100,60,10);c.fill();c.fillStyle=BL;K.rr(c,40,300,60,44,8);c.fill();}
+    if(k>.55){c.fillStyle=OR;K.rr(c,w/2-60,392,120,40,20);c.fill();txt(c,'Pratonton',w/2,418,14,'900','#fff','center');}}}
+/* ---- adegan ---- */
+var CAP=[[0,2.6,'Ini KuizKu,',['KuizKu']],[2.6,5,'app kuiz untuk murid.',['kuiz']],[5,7.6,'Jawab, terus dapat markah.',['markah']],[7.6,10,'Nak buat sendiri? Ikut ni.',['sendiri']],[10,12,'Buka menu App,',['App']],[12,14,'cari KuizKu,',['KuizKu']],[14,16,'isi topik anda,',['topik']],[16,18,'salin prompt,',['salin']],[18,20.4,'tampal dan pratonton.',['pratonton']],[20.4,25,'Nak prompt ni? Komen APP.',['APP']]];
+var STEP=[[10,'Buka menu App'],[12,'Cari app'],[14,'Isi & ubah'],[16,'Salin prompt'],[18,'Tampal & pratonton']];
+function draw(c,t){var blue=t<7.6;
+  if(blue){c.fillStyle=BL;c.fillRect(0,0,W,H);c.fillStyle='rgba(255,255,255,.06)';for(var i=0;i<14;i++){c.beginPath();c.moveTo(W/2,H*.45);c.arc(W/2,H*.45,900,i*.45+t*.1,i*.45+.22+t*.1);c.fill();}}
+  else{c.fillStyle=CR;c.fillRect(0,0,W,H);c.fillStyle='rgba(253,94,43,.06)';for(var y=0;y<H;y+=36)for(var x=(y/36%2)*18;x<W;x+=36){K.circle(c,x,y,2);c.fill();}}
+  /* peralihan bulatan */
+  if(t>7.2&&t<8.2){var k=K.eio(K.prog(t,7.3,8.1));c.save();K.circle(c,W/2,H/2,k*900);c.clip();c.fillStyle=CR;c.fillRect(0,0,W,H);c.restore();}
+  /* judul atas */
+  c.textBaseline='alphabetic';
+  if(blue){var kt=K.back(K.prog(t,0,.5));c.save();c.translate(W/2,96);c.scale(kt,kt);txt(c,'KuizKu',0,0,46,'900','#fff','center');c.restore();}
+  else if(t<10){txt(c,'5 langkah mudah',W/2,100,34,'900',INK,'center');}
+  else if(t<20.4){var si=0;STEP.forEach(function(s,i){if(t>=s[0])si=i;});var ks=K.back(K.prog(t,STEP[si][0],STEP[si][0]+.4));c.save();c.translate(W/2,92);c.scale(.6+ks*.4,.6+ks*.4);
+    K.font(c,'900',30,F);var tw=c.measureText(STEP[si][1]).width;c.fillStyle=OR;K.circle(c,-tw/2-24,-10,19);c.fill();txt(c,si+1,-tw/2-24,0,20,'900','#fff','center');txt(c,STEP[si][1],-tw/2+6,0,30,'900',INK);c.restore();}
+  /* telefon */
+  var py=H*.5+ (1-K.eo(K.prog(t,0,.6)))*500, sc=1.02;
+  if(t<20.4)phone(c,W/2,py,sc,function(c,w,h){
+    if(t<2.6)sHome(c,w,h,t);else if(t<5)sQuiz(c,w,h,t-2.6,0);else if(t<7.6)sQuiz(c,w,h,t-2.6,K.prog(t,5.3,6.4));
+    else if(t<10)sPG(c,w,h,t,0,0);else if(t<12)sPG(c,w,h,t,0,K.prog(t,10,11.6));else if(t<14)sPG(c,w,h,t,1,K.prog(t,12,13.6));else if(t<16)sPG(c,w,h,t,2,K.prog(t,14,15.6));else if(t<18)sPG(c,w,h,t,3,K.prog(t,16,17.6));else sPG(c,w,h,t,4,K.prog(t,18,20));});
+  /* ketukan (koordinat skrin → kanvas) */
+  function P(x,y){return [W/2+(x-PW/2)*sc,py+(y-PH/2)*sc];}
+  var TAPS=[[2.2,P(76,160)],[5.3,P(200,300)],[10.8,P(140,264)],[12.3,P(140,104)],[13.6,P(160,220)],[14.2,P(140,162)],[16.6,P(140,477)],[19.1,P(140,412)]];
+  TAPS.forEach(function(tp,i){var k=K.prog(t,tp[0],tp[0]+.5);tap(c,tp[1][0],tp[1][1],k);var nx=TAPS[i+1];if(t>tp[0]-.5&&t<tp[0]+.15){var kk=K.eio(K.prog(t,tp[0]-.5,tp[0]));var prev=TAPS[i-1]?TAPS[i-1][1]:[W-40,H-80];cursor(c,K.lerp(prev[0],tp[1][0],kk),K.lerp(prev[1],tp[1][1],kk));}});
+  /* CTA komen */
+  if(t>=20.4){var kc=K.back(K.prog(t,20.4,21));txt(c,'Nak prompt ni?',W/2,330,40,'900',INK,'center');
+    c.save();c.translate(W/2,450);c.scale(kc,kc);c.fillStyle='#fff';K.rr(c,-210,-34,420,68,34);c.fill();c.strokeStyle='#E1D5C2';c.lineWidth=2;K.rr(c,-210,-34,420,68,34);c.stroke();
+    var typed='APP'.slice(0,Math.floor(K.prog(t,21.2,21.9)*3.99));txt(c,typed||'Tulis komen…',-180,9,24,'900',typed?INK:'#A99A85');c.fillStyle=OR;K.circle(c,174,0,22);c.fill();K.icon(c,'send',163,-11,22,'#fff',2.4);c.restore();
+    if(t>22.3){var kg=K.back(K.prog(t,22.3,22.8));c.save();c.translate(W/2,560);c.scale(kg,kg);c.fillStyle=GR;K.rr(c,-170,-28,340,56,28);c.fill();K.icon(c,'check',-150,-12,24,'#fff',3);txt(c,'Link prompt dihantar ke DM',12,8,17,'900','#fff','center');c.restore();}
+    K.bulat(c,W/2,720,50,t,'happy');}
+  /* takarir — di luar telefon */
+  var q=K.cue(CAP,t);if(q&&t<20.4){K.font(c,'900',30,F);c.textAlign='left';var lt=t-q.a;K.words(c,q.s,W/2,H-70,{t:lt*1.3,align:'center',hl:q.hl,hlColor:blue?'#FFD34D':OR,color:blue?'#fff':INK,rise:12});}
+}
+K.film({W:W,H:H,dur:25,poster:5.9,bpm:112,chords:[60,57,53,55],mood:'soft',
+  sfx:[[2.2,'tap'],[5.3,'tap'],[5.5,'ding'],[7.4,'whoosh'],[10,'pop'],[10.8,'tap'],[12,'pop'],[12.3,'tap'],[13.6,'tap'],[14,'pop'],[14.2,'tap'],[16,'pop'],[16.6,'tap'],[18,'pop'],[19.1,'tap'],[20.4,'whoosh'],[22.3,'ding']],
+  prep:function(){return Promise.all([document.fonts.load('900 30px Nunito'),document.fonts.load('800 30px Nunito'),document.fonts.load('700 30px Nunito')]).catch(function(){})},draw:draw});
+})();
+</script>
+</body>
+</html>
