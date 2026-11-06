@@ -19,11 +19,11 @@
   window.isiKit = function () {
     var el = document.getElementById('kit'); if (!el || !window.KIT_VID) return;
     var parts = [['phone', 'kA', 'kAd', 'kPro'], ['game', 'kG', 'kGd', 'kPro'], ['page', 'kL', 'kLd', 'kPro'], ['play', 'kV', 'kVd', 'kFree']];
-    var flow = ['kf1', 'kf2', 'kf3', 'kf4'];
+    var flow = ['kf1', 'kf2', 'kf3', 'kf4', 'kf5', 'kf6'];
     el.querySelector('#kitParts').innerHTML = parts.map(function (p, i) {
       return '<div class="kp"><span class="kp-n">' + (i + 1) + '</span><span class="kp-i">' + ICK[p[0]] + '</span><b>' + t(p[1]) + '</b><p>' + t(p[2]) + '</p><span class="kp-tag ' + (p[3] === 'kFree' ? 'free' : '') + '">' + (p[3] === 'kFree' ? '' : ICK.lock) + t(p[3]) + '</span></div>';
     }).join('');
-    el.querySelector('#kitFlow').innerHTML = flow.map(function (k, i) { return '<li><span>' + (i + 1) + '</span><div><b>' + t(k) + '</b><small>' + t(k + 'd') + '</small></div></li>'; }).join('');
+    el.querySelector('#kitFlow').innerHTML = flow.map(function (k, i) { return '<li><span>' + (i + 1) + '</span><div><b>' + t(k) + '</b><small>' + t(k + 'd') + '</small><em class="kf-alat">' + t(k + 'a') + '</em></div></li>'; }).join('');
     el.querySelector('#kitVids').innerHTML = KIT_VID.map(function (v, i) {
       var b = KV.bhs[v.id] || 'ms';
       return '<article class="kv">' +

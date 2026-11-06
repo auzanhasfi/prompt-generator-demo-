@@ -356,3 +356,26 @@ Object.assign(UI.en, {
   kv2n: 'App Promo + Step Tutorial', kv2j: 'Product demo · portrait 9:16', kv2d: 'App screens in a big phone with finger taps, 5 numbered steps on how to make it, ending with a comment box typing the keyword.',
   kProH: 'In Pro: 6 video styles + fully customisable', kProP: 'Isometric, cartoon reaction, oil painting, pictogram and more. Fill in the product, audience, CTA, duration and format; the prompt adapts.'
 });
+
+/* Marketing Kit: cara jual 6 langkah (6 Nov 2026, sama dengan LP tools) */
+Object.assign(UI.id, { kFlowH: 'Cara menjualnya, langkah demi langkah',
+  kf1: 'Pilih produk yang mau dijual', kf1d: 'Mulai dari materi yang paling kamu kuasai, misalnya kuis pecahan kelas 4.', kf1a: 'Galeri Prompt',
+  kf2: 'Bikin produknya dengan prompt', kf2d: 'Isi topik, jenjang, nama produk, salin prompt, tempel ke AI.', kf2a: 'Prompt Generator',
+  kf3: 'Uji ke murid, rekam serunya', kf3d: 'Rekaman layar dan suasana kelas jadi bahan promosi paling meyakinkan.', kf3a: 'HP kamu',
+  kf4: 'Bikin halaman jualan', kf4d: 'Isi harga dan tombol WhatsApp atau link bayar, upload ke Netlify gratis.', kf4a: 'Template Landing Page',
+  kf5: 'Bikin video promosinya', kf5d: 'Pilih template video, isi produk dan ajakan "Komen APP".', kf5a: 'Template Video',
+  kf6: 'Posting, balas komen, ulangi', kf6d: 'Kirim link halaman jualan ke setiap yang komen. Satu produk bisa dijual berkali-kali.', kf6a: 'TikTok · Reels · Shorts' });
+Object.assign(UI.ms, { kFlowH: 'Cara menjualnya, langkah demi langkah',
+  kf1: 'Pilih produk yang nak dijual', kf1d: 'Mula dengan bahan yang paling cikgu kuasai, contohnya kuiz pecahan Tahun 4.', kf1a: 'Galeri Prompt',
+  kf2: 'Bina produk dengan prompt', kf2d: 'Isi topik, tahun, nama produk, salin prompt, tampal ke AI.', kf2a: 'Prompt Generator',
+  kf3: 'Uji pada murid, rakam keseronokannya', kf3d: 'Rakaman skrin dan suasana kelas jadi bahan promosi paling meyakinkan.', kf3a: 'Telefon cikgu',
+  kf4: 'Bina halaman jualan', kf4d: 'Isi harga dan butang WhatsApp atau link bayaran, muat naik ke Netlify percuma.', kf4a: 'Templat Landing Page',
+  kf5: 'Bina video promosinya', kf5d: 'Pilih templat video, isi produk dan ajakan "Komen APP".', kf5a: 'Templat Video',
+  kf6: 'Hantar, balas komen, ulang', kf6d: 'Hantar link halaman jualan kepada setiap yang komen. Satu produk boleh dijual berkali-kali.', kf6a: 'TikTok · Reels · Shorts' });
+Object.assign(UI.en, { kFlowH: 'How to sell it, step by step',
+  kf1: 'Pick a product to sell', kf1d: 'Start with the subject you know best, e.g. a Grade 4 fractions quiz.', kf1a: 'Prompt Gallery',
+  kf2: 'Build it with a prompt', kf2d: 'Fill in the topic, level and product name, copy the prompt, paste it into AI.', kf2a: 'Prompt Generator',
+  kf3: 'Test with students, record the fun', kf3d: 'Screen recordings and class moments are your most convincing promo material.', kf3a: 'Your phone',
+  kf4: 'Build the sales page', kf4d: 'Add the price and a WhatsApp or payment button, upload to Netlify for free.', kf4a: 'Landing Page template',
+  kf5: 'Make the promo video', kf5d: 'Pick a video template, add your product and a "Comment APP" call to action.', kf5a: 'Video template',
+  kf6: 'Post, reply, repeat', kf6d: 'Send the sales page link to everyone who comments. One product can be sold again and again.', kf6a: 'TikTok · Reels · Shorts' });
