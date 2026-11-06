@@ -20,3 +20,6 @@ Seksyen #kit sebelum testimoni: 4 bagian kit jualan versi Pro (App, Game, Landin
 (tipografi-kinetik, promo-tutorial) dengan pratonton KOD di video/<id>.html (video/kit.js). Prompt sentiasa Bahasa Melayu;
 butang BM/ID/EN memilih bahasa HASIL video (js/kit-video-data.js dijana daripada js/video.js repo Pro). Fail: js/kit.js, css/kit.css,
 teks k*/kv* di akhir js/i18n.js, poster img/video/.
+
+## Perbaikan HP ikut Microsoft Clarity (6 Nov 2026 malam)
+CTA di bawah video hero (hvA/hvB), urutan: hero > galeri > cara > pro > banding > kit > testimoni > wtm. HP: galeri 4 kartu + tombol "Lihat semua", Marketing Kit & fitur Pro jadi geser ke samping, cara jual 3 langkah + tombol. Event Clarity di js/ukur.js (situs=demo, bahasa, klik_pro, main_video_testimoni, salin_prompt, pratonton_galeri, lihat_<seksyen>). HP dari 19.200 px jadi ±11.500 px.

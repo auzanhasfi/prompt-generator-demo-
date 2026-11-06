@@ -63,6 +63,7 @@ function render(){
   if (window.isiLiputan) isiLiputan();
   if (window.isiMeja) isiMeja();
   if (window.isiKit) isiKit();
+  var gm = $('galMore'); if (gm) { var buka = $('grid').classList.contains('buka'); gm.textContent = buka ? t('galTutup') : t('galSemua', { n: list.length }); gm.hidden = list.length <= 4; }
 }
 
 function card(i){
@@ -143,4 +144,9 @@ document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !$('
     lg = /(^|,)ms/.test(nav) ? 'ms' : /(^|,)id/.test(nav) ? 'id' : /(^|,)en/.test(nav) ? 'en' : 'id';
   }
   setLang(lg);
+})();
+
+/* galeri di HP: 4 kartu dulu, tombol "Lihat semua" (perbaikan Clarity 6 Nov 2026) */
+(function () { var gm = document.getElementById('galMore'); if (!gm) return;
+  gm.addEventListener('click', function () { var g = document.getElementById('grid'), buka = g.classList.toggle('buka'); gm.textContent = buka ? t('galTutup') : t('galSemua', { n: g.querySelectorAll('.card:not(.lock)').length }); if (!buka) document.getElementById('galeri').scrollIntoView({ block: 'start' }); });
 })();

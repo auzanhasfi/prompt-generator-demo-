@@ -379,3 +379,8 @@ Object.assign(UI.en, { kFlowH: 'How to sell it, step by step',
   kf4: 'Build the sales page', kf4d: 'Add the price and a WhatsApp or payment button, upload to Netlify for free.', kf4a: 'Landing Page template',
   kf5: 'Make the promo video', kf5d: 'Pick a video template, add your product and a "Comment APP" call to action.', kf5a: 'Video template',
   kf6: 'Post, reply, repeat', kf6d: 'Send the sales page link to everyone who comments. One product can be sold again and again.', kf6a: 'TikTok · Reels · Shorts' });
+
+/* Perbaikan HP ikut Clarity (6 Nov 2026) */
+Object.assign(UI.id, { hvA: 'Ambil prompt gratis', hvB: 'Lihat versi Pro', hvK: 'Gratis, tanpa daftar. Salin prompt, tempel ke AI, game langsung jadi.', galSemua: 'Lihat semua {n} prompt', galTutup: 'Tutup', kfMore: 'Lihat 3 langkah lagi' });
+Object.assign(UI.ms, { hvA: 'Ambil prompt percuma', hvB: 'Lihat versi Pro', hvK: 'Percuma, tanpa daftar. Salin prompt, tampal ke AI, game terus siap.', galSemua: 'Lihat semua {n} prompt', galTutup: 'Tutup', kfMore: 'Lihat 3 langkah lagi' });
+Object.assign(UI.en, { hvA: 'Get the free prompts', hvB: 'See the Pro version', hvK: 'Free, no sign-up. Copy a prompt, paste it into AI, the game is ready.', galSemua: 'See all {n} prompts', galTutup: 'Close', kfMore: 'See 3 more steps' });

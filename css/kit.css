@@ -41,3 +41,26 @@
 @media (max-width:560px){.kit-parts,.kit-flow{grid-template-columns:1fr}.kv{grid-template-columns:1fr}.kv-box{max-width:300px;width:100%;margin:0 auto}}
 
 .kf-alat{display:inline-block;margin-top:8px;font:700 11px "Space Mono",monospace;font-style:normal;color:var(--acc);background:var(--chip);border-radius:7px;padding:3px 7px}
+
+/* ===== Perbaikan HP ikut Clarity (6 Nov 2026) ===== */
+.hv-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.hv-kecil{margin:8px 0 0;font-size:13px;color:var(--mut)}
+.lebih-btn{display:none;width:100%;margin:-28px 0 40px}
+.kf-more{margin:12px 0 0}
+@media (max-width:640px){
+  .lebih-btn{display:flex}
+  .grid:not(.buka)>.card:not(.lock):nth-child(n+5){display:none}
+  .hv-cta .btn{flex:1 1 100%}
+  .card .pv{font-size:14px;padding:8px 14px}
+  .kit-parts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-16px;padding:0 16px 6px}
+  .kp{flex:0 0 78%;scroll-snap-align:start}
+  .kit-flow:not(.buka) li:nth-child(n+4){display:none}
+  .kv{grid-template-columns:40% 1fr;gap:12px;padding:10px}
+  .kv-box{max-width:none}
+  .kv-body p{display:none}
+  .kv-body h3{font-size:16px}
+  .kv-act .btn{height:40px;padding:0 10px;font-size:13px;flex:1 1 100%}
+  .pf-grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 8px}
+  .pf-grid>.pf{flex:0 0 80%;scroll-snap-align:start}
+}
+.lebih-btn[hidden]{display:none!important}

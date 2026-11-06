@@ -23,6 +23,7 @@
     el.querySelector('#kitParts').innerHTML = parts.map(function (p, i) {
       return '<div class="kp"><span class="kp-n">' + (i + 1) + '</span><span class="kp-i">' + ICK[p[0]] + '</span><b>' + t(p[1]) + '</b><p>' + t(p[2]) + '</p><span class="kp-tag ' + (p[3] === 'kFree' ? 'free' : '') + '">' + (p[3] === 'kFree' ? '' : ICK.lock) + t(p[3]) + '</span></div>';
     }).join('');
+    var fl = el.querySelector('#kitFlow'); if (!el.querySelector('#kfMore')) { var bm = document.createElement('button'); bm.type = 'button'; bm.id = 'kfMore'; bm.className = 'btn line lebih-btn kf-more'; bm.setAttribute('data-ev', 'kit_lihat_langkah'); fl.after(bm); bm.onclick = function () { fl.classList.toggle('buka'); bm.textContent = fl.classList.contains('buka') ? t('galTutup') : t('kfMore'); }; } el.querySelector('#kfMore').textContent = fl.classList.contains('buka') ? t('galTutup') : t('kfMore');
     el.querySelector('#kitFlow').innerHTML = flow.map(function (k, i) { return '<li><span>' + (i + 1) + '</span><div><b>' + t(k) + '</b><small>' + t(k + 'd') + '</small><em class="kf-alat">' + t(k + 'a') + '</em></div></li>'; }).join('');
     el.querySelector('#kitVids').innerHTML = KIT_VID.map(function (v, i) {
       var b = KV.bhs[v.id] || 'ms';
