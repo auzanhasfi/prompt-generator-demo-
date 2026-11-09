@@ -384,3 +384,35 @@ Object.assign(UI.en, { kFlowH: 'How to sell it, step by step',
 Object.assign(UI.id, { hvA: 'Ambil prompt gratis', hvB: 'Lihat versi Pro', hvK: 'Gratis, tanpa daftar. Salin prompt, tempel ke AI, game langsung jadi.', galSemua: 'Lihat semua {n} prompt', galTutup: 'Tutup', kfMore: 'Lihat 3 langkah lagi' });
 Object.assign(UI.ms, { hvA: 'Ambil prompt percuma', hvB: 'Lihat versi Pro', hvK: 'Percuma, tanpa daftar. Salin prompt, tampal ke AI, game terus siap.', galSemua: 'Lihat semua {n} prompt', galTutup: 'Tutup', kfMore: 'Lihat 3 langkah lagi' });
 Object.assign(UI.en, { hvA: 'Get the free prompts', hvB: 'See the Pro version', hvK: 'Free, no sign-up. Copy a prompt, paste it into AI, the game is ready.', galSemua: 'See all {n} prompts', galTutup: 'Close', kfMore: 'See 3 more steps' });
+
+/* Best seller di Pro (9 Nov 2026) */
+Object.assign(UI.id, { tlEyebrow: 'Best seller di Pro', tlH: 'Yang paling laris ada di <em>Pro</em>',
+  tlP: 'Prompt gratis di atas baru sebagian. Game dan app best seller kami ada di versi Pro. Mau juga? Tinggal akses Pro.',
+  tlR1: 'Best seller #1', tlR2: 'Best seller #2',
+  tl_dunia_clawd_g: 'Game 3D gaya Roblox', tl_dunia_clawd_n: 'Dunia Clawd', tl_dunia_clawd_d: 'Empat dunia blok 3D. Soal muncul di jembatan, pintu, dan lift.',
+  tl_arena_clawd_pro_g: 'Game gaya Mobile Legends', tl_arena_clawd_pro_n: 'Arena Clawd Pro', tl_arena_clawd_pro_d: 'Main sendiri dengan 7 hero, 1 atau 3 lorong, soal matematika 10 tingkat.',
+  tl_mahkota_clawd_g: 'Game kartu arena', tl_mahkota_clawd_n: 'Mahkota Clawd', tl_mahkota_clawd_d: 'Gaya Clash Royale. Jawab soal untuk mengisi eliksir.',
+  tl_clawd_kilat_g: 'Game lari 3D', tl_clawd_kilat_n: 'Clawd Kilat', tl_clawd_kilat_d: 'Lewati gerbang jawaban dan lawan bos tiap 1.200 meter.',
+  tl_jawiku_g: 'App belajar', tl_jawiku_n: 'JawiKu', tl_jawiku_d: '37 huruf Jawi, kamus, kuis, dan latihan menulis.',
+  tl_biolab_g: 'App 3D', tl_biolab_n: 'BioLab 3D', tl_biolab_d: 'Sel, DNA, helikase, dan neuron dalam 3D interaktif.',
+  tlBtn: 'Akses Pro', tlK: 'Termasuk 100+ prompt lainnya dan Prompt Generator.' });
+Object.assign(UI.ms, { tlEyebrow: 'Best seller di Pro', tlH: 'Yang paling laris ada di <em>Pro</em>',
+  tlP: 'Prompt percuma di atas baru sebahagian. Game dan app best seller kami ada di versi Pro. Nak juga? Terus akses Pro.',
+  tlR1: 'Best seller #1', tlR2: 'Best seller #2',
+  tl_dunia_clawd_g: 'Game 3D gaya Roblox', tl_dunia_clawd_n: 'Dunia Clawd', tl_dunia_clawd_d: 'Empat dunia blok 3D. Soalan muncul di jambatan, pintu dan lif.',
+  tl_arena_clawd_pro_g: 'Game gaya Mobile Legends', tl_arena_clawd_pro_n: 'Arena Clawd Pro', tl_arena_clawd_pro_d: 'Main seorang dengan 7 hero, 1 atau 3 lorong, soalan matematik 10 tahap.',
+  tl_mahkota_clawd_g: 'Game kad arena', tl_mahkota_clawd_n: 'Mahkota Clawd', tl_mahkota_clawd_d: 'Gaya Clash Royale. Jawab soalan untuk mengisi eliksir.',
+  tl_clawd_kilat_g: 'Game lari 3D', tl_clawd_kilat_n: 'Clawd Kilat', tl_clawd_kilat_d: 'Lepasi gerbang jawapan dan lawan bos setiap 1,200 meter.',
+  tl_jawiku_g: 'App belajar', tl_jawiku_n: 'JawiKu', tl_jawiku_d: '37 huruf Jawi, kamus, kuiz dan latihan menulis.',
+  tl_biolab_g: 'App 3D', tl_biolab_n: 'BioLab 3D', tl_biolab_d: 'Sel, DNA, helikase dan neuron dalam 3D interaktif.',
+  tlBtn: 'Akses Pro', tlK: 'Termasuk 100+ prompt lain dan Prompt Generator.' });
+Object.assign(UI.en, { tlEyebrow: 'Best sellers in Pro', tlH: 'Our best sellers are in <em>Pro</em>',
+  tlP: 'The free prompts above are only part of it. Our best-selling games and apps are in the Pro version. Want them too? Just get Pro.',
+  tlR1: 'Best seller #1', tlR2: 'Best seller #2',
+  tl_dunia_clawd_g: 'Roblox-style 3D game', tl_dunia_clawd_n: 'Dunia Clawd', tl_dunia_clawd_d: 'Four 3D block worlds. Questions appear on bridges, doors and lifts.',
+  tl_arena_clawd_pro_g: 'Mobile Legends-style game', tl_arena_clawd_pro_n: 'Arena Clawd Pro', tl_arena_clawd_pro_d: 'Solo play with 7 heroes, 1 or 3 lanes, and 10 levels of maths questions.',
+  tl_mahkota_clawd_g: 'Card arena game', tl_mahkota_clawd_n: 'Mahkota Clawd', tl_mahkota_clawd_d: 'Clash Royale style. Answer questions to fill your elixir.',
+  tl_clawd_kilat_g: '3D runner game', tl_clawd_kilat_n: 'Clawd Kilat', tl_clawd_kilat_d: 'Run through answer gates and fight a boss every 1,200 metres.',
+  tl_jawiku_g: 'Learning app', tl_jawiku_n: 'JawiKu', tl_jawiku_d: '37 Jawi letters, a dictionary, quizzes and writing practice.',
+  tl_biolab_g: '3D app', tl_biolab_n: 'BioLab 3D', tl_biolab_d: 'Cells, DNA, helicase and neurons in interactive 3D.',
+  tlBtn: 'Get Pro', tlK: 'Includes 100+ more prompts and the Prompt Generator.' });

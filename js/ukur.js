@@ -17,6 +17,6 @@
   var dilihat = {};
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting && !dilihat[x.target.id]) { dilihat[x.target.id] = 1; c('event', 'lihat_' + x.target.id); } }); }, { threshold: .25 });
-    ['galeri', 'cara', 'pro', 'kit', 'testimoni', 'wtm'].forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+    ['galeri', 'terlaris', 'cara', 'pro', 'kit', 'testimoni', 'wtm'].forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
   }
 })();
