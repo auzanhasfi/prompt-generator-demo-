@@ -138,6 +138,12 @@ document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !$('
 
 (function(){
   var m = location.pathname.match(/^\/(id|ms|en)(\/|$)/), lg = m ? m[1] : null;
+  // ?geo=1 = Netlify mengalihkan dari "/" ikut negara (10 Nov 2026); pilihan bahasa yang tersimpan tetap menang
+  if (/[?&]geo=1/.test(location.search)) {
+    try { var simpan = localStorage.getItem('galeri_lg'); if (simpan && UI[simpan]) lg = simpan; } catch (e) {}
+    var q = location.search.replace(/([?&])geo=1(&|$)/, '$1').replace(/[?&]$/, '');
+    try { history.replaceState(null, '', location.pathname + q + location.hash); } catch (e) {}
+  }
   if (!lg) try { lg = localStorage.getItem('galeri_lg'); } catch (e) {}
   if (!lg) {
     var nav = (navigator.languages || [navigator.language || 'id']).join(',').toLowerCase();

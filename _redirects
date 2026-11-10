@@ -1,3 +1,7 @@
+# Bahasa ikut negara untuk "/" (10 Nov 2026): Indonesia -> /id, Malaysia & Brunei -> /ms, Singapura & lainnya -> /en
+/      /id?geo=1  302!  Country=id
+/      /ms?geo=1  302!  Country=my,bn
+/      /en?geo=1  302!
 # Satu halaman, tiga bahasa: /id, /ms, /en
 /id    /index.html  200
 /ms    /index.html  200
